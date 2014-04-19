@@ -1,10 +1,7 @@
 <?php
+require 'util/core.php';
 
-require 'config.php';
-
-$header = '<h1>This is a header</h1>';
-
-$content = '<p>This is content</p>';
+$content = get_view("view/carousel.php");
 
 $footer = 'copyright Looi Xin Sing';
 
