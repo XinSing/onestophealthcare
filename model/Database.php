@@ -1,30 +1,34 @@
 <?php
-$db = new Mysqli($dbhost, $dbuser, $dbpass, $dbname);
-if ($db->connect_errno)
-	die("Unable to enstablish connection to database: " . $db->connect_error);
-
-
-//return an associate array of all rows from the given query
-function select($selectquery)
-{
-	$rows = array();
-	if($result = $db->query($selectquery))
-	{
-		while ($row = $result->fetch_assoc())
-			$rows[] = $row;
-		$result->free();
+class Database{
+    function __construct() {
+		$this->con = new Mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+		if ($this->con->connect_errno)
+			die("Unable to enstablish connection to database: " . $this->con->connect_error);
 	}
-	return $rows;
-}
 
-//insert a new row with provided values, into a given table
-function insert_row($values, $table)
-{
-	return $db->query("INSERT INTO `$table` VALUES($values)");
-}
+	//return an associate array of all rows from the given query
+	public function select($selectquery)
+	{
+		$rows = array();
+		if($result = $this->con->query($selectquery))
+		{
+			while ($row = $result->fetch_assoc())
+				$rows[] = $row;
+			$result->free();
+		}
+		return $rows;
+	}
 
-//count the number of rows of result of a given query
-function row_count($selectquery)
-{
-	return $db->query($selectquery)->num_rows;
+	//insert a new row with provided values, into a given table
+	public function insert_row($values, $table)
+	{
+		return $this->con->query("INSERT INTO `$table` VALUES($values)");
+	}
+
+	//count the number of rows of result of a given query
+	public function row_count($selectquery)
+	{
+		return $this->con->query($selectquery)->num_rows;
+	}
+		
 }

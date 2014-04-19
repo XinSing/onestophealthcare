@@ -7,11 +7,10 @@ $css[] = 'bootstrap.min';
 $css[] = 'font-awesome.min';
 $css[] = 'base';
 
-$dbuser = 'root';
-$dbpass = '';
-$dbhost = 'localhost';
-$dbname = 'onestophealthcare';
-
+define('DB_HOST', '127.0.0.1');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'onestophealthcare');
 /*
 echo '<pre>';
 print_r($js);
