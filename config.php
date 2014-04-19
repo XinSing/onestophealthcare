@@ -16,5 +16,7 @@ $dbname = 'onestophealthcare';
 echo '<pre>';
 print_r($js);
 print_r($css);
+print_r($css);
+print_r($css);
 echo '</pre>';*/
 ?>
