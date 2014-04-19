@@ -1,6 +1,6 @@
 <div class='container articleblock'>
 
-<?php foreach($articles as $a){ // id, content, picture, title ?>
+<?php foreach($articles as $a){ // id, content, picture, title,//load the numbers of articles ?>				
 
 <article>
 	<header><?php echo $a['title']?></header>
