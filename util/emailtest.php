@@ -7,13 +7,13 @@ $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = '587';
 $mail->SMTPAuth = true;
-$mail->Username = 'your gmail account'; // full gmail account
-$mail->Password = 'yourpassword'; 		// password
+$mail->Username = 'noreply.onestophealthcare@gmail.com'; // full gmail account
+$mail->Password = 'abcd88888888'; 		// password
 $mail->SMTPSecure = 'tls'; 
 
-$mail->From = '8rc.um.edu.my@gmail.com';		// full gmail account
-$mail->FromName = 'Name of the sender';			// sender name
-$mail->addAddress('yskoay_919@hotmail.com');  	// Add recipient
+$mail->From = 'noreply.onestophealthcare@gmail.com';		// full gmail account
+$mail->FromName = 'One Stop Health Care';			// sender name
+$mail->addAddress('xinsing_92@siswa.um.edu.my');  	// Add recipient
 
 $mail->Subject = 'Title of the email';
 $mail->Body    = 'the Content, can use html tags';

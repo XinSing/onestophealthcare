@@ -43,7 +43,7 @@
 </head>
 <body>
 <div class="topheader">
-<img src='/onestophealthcare/res/img/background.jpg' />
+<img src='/onestophealthcare/res/img/logo.png' />
 </div>
 <div class="navbar navbar-default" style='margin-bottom:0;'>
   <div class="navbar-header">
@@ -66,7 +66,7 @@
 		  <li><a href="#">Herbal Corner</a></li>
 		  <li><a href="#">Knowledge of Exercise and Keep Fit</a></li>
 		  <li><a href="#">Knowledge of Beauty</a></li>
-		  <li><a href="#">Video</a></li>
+		  <li><a href="#">Health Video</a></li>
         </ul>
       </li>
       <li class="dropdown">
@@ -85,8 +85,8 @@
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Healthy Food Guide <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Recipe Collection and Menus</a></li>
-          <li><a href="#">Healthy Cooking</a></li>
+          <li><a href="#">Recipe Collection and Healthy Cooking</a></li>
+          <li><a href="#">Food Nutrition</a></li>
           <li><a href="#">Diet and Health</a></li>
           <li><a href="#">Food News</a></li>
           <li><a href="#">Food Taboos</a></li>
@@ -112,7 +112,6 @@
           <li><a href="#">Healthy Food Guide</a></li>
           <li><a href="#">Self-Improvement and Self-Tracking Corner</a></li>
           <li><a href="#">Recommendation</a></li>
-		  <li><a href="#">Forum</a></li>
 		  <li><a href="#">Advance Search</a></li>
         </ul>
       </li>
@@ -153,6 +152,9 @@
 <?php echo $content ?>
 <div class = 'container'>
 <?php echo $footer ?>
+	<a href="http://facebook.com/onestophealthcare"><img title="facebook" src="/onestophealthcare/res/img/facebook.jpg" alt="Facebook" width="50" height="50"/></a>
+	<img src="/onestophealthcare/res/img/FacebookLogo.jpg" width="50" height="50";>
+</div>
 </div>
 </body>
 </html>
