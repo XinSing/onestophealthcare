@@ -7,6 +7,7 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
 		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner">
 	  
@@ -17,19 +18,25 @@
         </div>
 		
 		<div class="item">
-          <img src="/onestophealthcare/res/img/SlideTwo.jpg" alt="Second slide">
-          <div class="container">
-          </div>
-        </div>
-        
-        <div class="item">
-          <img src="/onestophealthcare/res/img/SlideThree.jpg" alt="Third slide">
+          <img src="/onestophealthcare/res/img/SlideTwoLogin.png" alt="Second slide">
           <div class="container">
           </div>
         </div>
 		
 		<div class="item">
-          <img src="/onestophealthcare/res/img/SlideFour.jpg" alt="Fourth slide">
+          <img src="/onestophealthcare/res/img/SlideThree.png" alt="Third slide">
+          <div class="container">
+          </div>
+        </div>
+		
+		<div class="item">
+          <img src="/onestophealthcare/res/img/SlideFour.png" alt="Fourth slide">
+          <div class="container">
+          </div>
+        </div>
+		
+		<div class="item">
+          <img src="/onestophealthcare/res/img/SlideFive.png" alt="Fifth slide">
           <div class="container">
           </div>
         </div>

@@ -155,6 +155,6 @@
 	<a href="http://facebook.com/onestophealthcare"><img title="facebook" src="/onestophealthcare/res/img/facebook.jpg" alt="Facebook" width="50" height="50"/></a>
 	<img src="/onestophealthcare/res/img/FacebookLogo.jpg" width="50" height="50";>
 </div>
-</div>
+ 
 </body>
 </html>
