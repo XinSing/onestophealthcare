@@ -43,7 +43,7 @@
 		</div>
 		<div class='col-sm-6 col-md-3'>
 			<div class="thumbnail">
-			  <img src="/onestophealthcare/res/img/self_trackingtry.jpg" >
+			  <img src="/onestophealthcare/res/img/self-tracking.jpg" >
 			  <div class="caption">
 				<h2>Self-Tracking</h2>
 				<li><h4>Allowing you to keep track of what you are eating daily</h4></li>
