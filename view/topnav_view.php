@@ -1,50 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>One stop health care</title>
-	<?php foreach($js as $js){?>
-	<script type='text/javascript' src='/onestophealthcare/res/js/<?php echo $js ?>.js'></script>
-	<?php } ?>
-	<?php foreach($css as $css){?>
-	<link rel="stylesheet" type="text/css" href="/onestophealthcare/res/css/<?php echo $css ?>.css" />
-	<?php } ?>
-	<style>
-		.topheader img{
-			width:98vw;
-		}
-		
-		
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-}
-	</style>
-</head>
-<body>
-<div class="topheader">
-<img src='/onestophealthcare/res/img/logo.png' />
-</div>
 <div class="navbar navbar-default" style='margin-bottom:0;'>
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -56,9 +9,12 @@
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information Kiosk <b class="caret"></b></a>
+        <a href="index.php">Home</a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information Kiosk<b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Healthy Kids</a></li>
+          <li><a href="article.php">Healthy Kids</a></li>
           <li><a href="#">Healthy Adult and Middle-Age People</a></li>
           <li><a href="#">Healthy Senior Citizens</a></li>
 		  <li><a href="#">Healthy Pregnancy</a></li>
@@ -100,19 +56,6 @@
         <ul class="dropdown-menu">
           <li><a href="#">Exercise Your Brain</a></li>
           <li><a href="#">Children Corner</a></li>
-          <li><a href="#">Healthy Diary</a></li>
-          <li><a href="#">Track My Progress</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">History<b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Information Kiosk</a></li>
-          <li><a href="#">Stress Management Corner</a></li>
-          <li><a href="#">Healthy Food Guide</a></li>
-          <li><a href="#">Self-Improvement and Self-Tracking Corner</a></li>
-          <li><a href="#">Recommendation</a></li>
-		  <li><a href="#">Advance Search</a></li>
         </ul>
       </li>
       <li class="dropdown">
@@ -147,14 +90,3 @@
     </ul>
   </div>
 </div><!-- end of navbar -->
-
-
-<?php echo $content ?>
-<div class = 'container'>
-<?php echo $footer ?>
-	<a href="http://facebook.com/onestophealthcare"><img title="facebook" src="/onestophealthcare/res/img/facebook.jpg" alt="Facebook" width="50" height="50"/></a>
-	<img src="/onestophealthcare/res/img/FacebookLogo.jpg" width="50" height="50";>
-</div>
- 
-</body>
-</html>

@@ -14,3 +14,15 @@
 <?php } ?>
 
 </div>
+<style>
+.articleblock article{
+	
+}
+.articleblock img{
+	max-width:60%;
+}
+.articleblock  header{
+	font-weight:bold;
+	font-size:2em;
+}
+</style>
