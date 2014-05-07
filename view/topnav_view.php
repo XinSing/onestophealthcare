@@ -42,7 +42,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Healthy Food Guide <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="#">Recipe Collection and Healthy Cooking</a></li>
-          <li><a href="#">Food Nutrition</a></li>
+          <li><a href="food_nutrition.php">Food Nutrition</a></li>
           <li><a href="#">Diet and Health</a></li>
           <li><a href="#">Food News</a></li>
           <li><a href="#">Food Taboos</a></li>
