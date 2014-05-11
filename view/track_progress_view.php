@@ -1,13 +1,40 @@
+<div class='container'>
+<div class='row'>
 <ul class="pager">
 		<li><a href="selftracking.php">&larr; Back</a></li>
  
 </ul>
 
-<form class="form-horizontal">
+<div class='result' style='width:100%; margin:auto'>
+	<h2 class='text-center'>Congratulation</h2>
+	
+</div>
+<div class='spinner' style='width:100%; margin:auto'>
+<h2 class='text-center'>Processing your result...</h2>
+<div id="floatingBarsG" style=' margin:auto'>
+<div class="blockG" id="rotateG_01">
+</div>
+<div class="blockG" id="rotateG_02">
+</div>
+<div class="blockG" id="rotateG_03">
+</div>
+<div class="blockG" id="rotateG_04">
+</div>
+<div class="blockG" id="rotateG_05">
+</div>
+<div class="blockG" id="rotateG_06">
+</div>
+<div class="blockG" id="rotateG_07">
+</div>
+<div class="blockG" id="rotateG_08">
+</div>
+</div>
+</div>
+<form class="form-horizontal col-md-offset-2 form">
 <fieldset>
 
 <!-- Form Name -->
-<legend>What are You Waiting For? Let`s Begin Your Health Journey Now!</legend>
+<legend class='col-md-9'>What are You Waiting For? Let`s Begin Your Health Journey Now!</legend>
 
 <!-- Text input-->
 <div class="form-group">
@@ -130,7 +157,7 @@
 	</div>
   <div class="radio">
     <label for="working-2">
-      <input type="radio" name="working" id="working-2" value="">
+      <input type="radio" name="working" id="working-2" value="3">
       &gt;10
     </label>
 	</div>
@@ -273,4 +300,19 @@
 </fieldset>
 </form>
 
-
+</div>
+</div>
+<script>
+	$('.spinner').hide();
+	$('.result').hide();
+	$(document).ready(function(){
+		$('.form').submit(function(){
+			$(this).fadeOut(1000, function(){
+				$('.spinner').fadeIn(1000).delay(3000).fadeOut(1000,function(){
+					$('.result').fadeIn(1000);
+				});
+			});
+			return false;
+		});
+	});
+</script>
