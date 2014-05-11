@@ -1,3 +1,4 @@
+<div class='container'>
 <ul class="pagination">
   <li><a href="food_nutrition.php">A</a></li>
   <li><a href="food_nutrition_B.php">B</a></li>
@@ -27,4 +28,5 @@
   <li><a href="#">Z</a></li>
 <div class="container">
 <img src='/onestophealthcare/res/img/B.png' />
+</div>
 </div>

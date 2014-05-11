@@ -1,3 +1,4 @@
+<div class='container'>
 <ul class="pagination">
   <li><a href="food_nutrition.php">A</a></li>
   <li><a href="food_nutrition_B.php">B</a></li>

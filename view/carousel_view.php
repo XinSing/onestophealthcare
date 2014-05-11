@@ -38,7 +38,13 @@
       <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class='fa fa-arrow-circle-o-left'></i></a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class='fa fa-arrow-circle-o-right'></i></a>
     </div><!-- /.carousel -->
-	
+	<?php
+if(isset($_SESSION['id'])){
+?><div class='container'>
+	<ul class="pager pull-right">
+		<li><a href="profile.php">Profile</a></li>
+	</ul></div>
+<?php } ?>
 	<style>
 		
 /* CUSTOMIZE THE CAROUSEL
