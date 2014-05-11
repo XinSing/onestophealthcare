@@ -42,6 +42,18 @@ function get_all_articles($db){
 }
 
 function get_all_title($db){
-	$article = select($db, "SELECT id, title FROM article");
-	return $article;
+	$titles = select($db, "SELECT id, title FROM article");
+	return $titles;
+}
+
+function add_diary($db, $bf, $lunch, $dinner, $supper, $exer, $slp, $coffee, $alcohol, $date, $id)
+{
+	$qry = "INSERT INTO diary VALUES('','$id','$bf','$lunch','$dinner','$supper','$slp','$exer','$alcohol','$coffee','$date')";
+	return $db->query($qry);
+}
+
+function get_all_diary($db, $id)
+{
+	$diaries = select($db, "SELECT * FROM diary WHERE userid = $id");
+	return $diaries;
 }

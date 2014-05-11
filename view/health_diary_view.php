@@ -1,19 +1,21 @@
+<div class='container'>
+<div class='row'>
+
 <ul class="pager">
-		<li><a href="selftracking.php">&larr; Back</a></li>
- 
+	<li><a href="selftracking.php">&larr; Back</a></li>
 </ul>
-<h1>My Health Diary</h1>
-<form class="form-horizontal">
+<form class="form-horizontal col-md-offset-2" action='health_diary_success.php' method='POST'>
 <fieldset>
 
 <!-- Form Name -->
-<legend></legend>
+
+<legend class='col-md-9'>My Health Diary</legend>
 
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Date :</label>  
-  <div class="col-md-2">
-  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
+  <div class="col-md-3">
+  <input id="textinput" name="date" type="date" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -22,47 +24,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">Breakfast : What You Have Ate and Drank?</label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Where and With Whom?</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Notes(Feeling, Hungry, etc)</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Snack: What You Have Ate and Drank?</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Where and With Whom?</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Notes(Feeling, Hungry, etc)</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
+    <textarea class="form-control" id="textarea" name="breakfast"></textarea>
   </div>
 </div>
 
@@ -70,47 +32,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">Lunch : What You Have Ate and Drank?</label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Where and With Whom?</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Notes(Feeling, Hungry, etc)</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">High Tea : What You Have Ate and Drank?</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Where and With Whom?</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Notes(Feeling, Hungry, etc)</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
+    <textarea class="form-control" id="textarea" name="lunch"></textarea>
   </div>
 </div>
 
@@ -118,23 +40,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">Dinner : What You Have Ate and Drank?</label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Where and With Whom?</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Notes(Feeling, Hungry, etc)</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
+    <textarea class="form-control" id="textarea" name="dinner"></textarea>
   </div>
 </div>
 
@@ -142,36 +48,11 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">Supper : What You Have Ate and Drank?</label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
+    <textarea class="form-control" id="textarea" name="supper"></textarea>
   </div>
 </div>
 
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Where and With Whom?</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Notes(Feeling, Hungry, etc)</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">What Time did You Wake Up Today?</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
+<!-- Text input--
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">How Long Did It Take You to Fall Asleep Last Night? (This may be an estimate.)</label>  
   <div class="col-md-4">
@@ -180,7 +61,7 @@
   </div>
 </div>
 
-<!-- Text input-->
+<!-- Text input--
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">How Many Times Did You Wake Up During the Night? (Include how long you stayed awake.)</label>  
   <div class="col-md-4">
@@ -192,33 +73,44 @@
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">In Total, How Many Hours Did You Sleep Last Night?</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
-    
+  <div class="col-md-2">
+    <div class="input-group">
+      <input id="appendedtext" name="sleep" class="form-control" placeholder="" type="number">
+      <span class="input-group-addon">Hours</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="appendedtext">How long did You Exercise Today?</label>
+  <div class="col-md-3">
+    <div class="input-group">
+      <input id="appendedtext" name="exercise" class="form-control" placeholder="" type="number">
+      <span class="input-group-addon">Minutes</span>
+    </div>
+  </div>
+</div>
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">Did You Consume Any Alcoholic Beverages Today?</label>
+  <div class="col-md-4">                     
+    <label class='radio-inline' for="alcoholic-0">
+      <input type="radio" name="alcohol" id="alcoholic-0" value="Yes" checked="checked">
+      Yes
+    </label>
+    <label class='radio-inline' for="alcoholic-1">
+      <input type="radio" name="alcohol" id="alcoholic-1" value="No">
+      No
+    </label>
   </div>
 </div>
 
 <!-- Textarea -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Did You Exercise Today? (Include the type, duration, and time of day if you exercised.)</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Did You Consume Any Alcoholic Beverages Today? (Include type, number, and time of day.)</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Did you Consume Any Caffeinated Drinks Or Foods Today? (Include type, number, and time of day.)</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea"></textarea>
+  <label class="col-md-4 control-label" for="textarea">How many cups of caffeinated drinks did you Consume today? </label>
+  <div class="col-md-2">                     
+    <input type='number' name='coffee' class='form-control'/>
   </div>
 </div>
 
@@ -233,6 +125,8 @@
 </fieldset>
 </form>
 
+</div>
+</div>
 
 
  

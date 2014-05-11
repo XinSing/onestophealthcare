@@ -53,7 +53,7 @@
 				<li><h5>Health Diary</h5></li>
 				<li><h5>Track My Progress</h5></li>
 				
-				<p><a href="selftracking.php" class="btn btn-primary" role="button">Self-Tracking</a> </p>
+				<p><a href="selftracking.php" class="btn btn-info" role="button">Self-Tracking</a> </p>
 			  </div>
 			</div>
 		</div>

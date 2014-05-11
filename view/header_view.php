@@ -43,5 +43,11 @@ Member Login
 </form>
 </div>
 </div>
-
+<?php
+if(isset($_SESSION['id'])){//if u logged in
+?>
+<script>
+$('.topheader').remove();
+</script>
+<?php } ?>
 <?php require 'view/topnav_view.php';?>

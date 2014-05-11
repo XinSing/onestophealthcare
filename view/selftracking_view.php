@@ -10,7 +10,10 @@
 				<h2>Health Diary</h2>
 			  </div>
 			  <img src="/onestophealthcare/res/img/healthdiary.jpg" >
-			  <p class='text-center'><br/><a href="health_diary.php" class="btn btn-info" role="button">Health Diary</a></p>
+			  <p class='text-center'><br/>
+			  <a href="display_diary.php" class="btn btn-info" role="button">Health Diary  <i class='fa fa-book'></i></a>
+			  <a href="health_diary.php" class="btn btn-info" role="button">New entry  <i class='fa fa-star'></i></a>
+			  </p>
 			</div>
 		</div>
 		<div class='col-sm-6 col-md-6'>

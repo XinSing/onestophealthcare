@@ -4,12 +4,6 @@ Copyright Xinsing
 	<img src="/onestophealthcare/res/img/FacebookLogo.jpg" height="50">
 
 </div>
-<?php
-if(isset($_SESSION['id'])){//if u logged in
-?>
-<script>
-$('.topheader').remove();
-</script>
-<?php } ?>
+
 </body>
 </html>

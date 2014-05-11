@@ -6,7 +6,6 @@ if($user = $user[0])
 {
 	$_SESSION['user'] = $user['fullname'];
 	$_SESSION['id'] = $user['id'];
-	
 }
 header('location: profile.php');
 ?>
