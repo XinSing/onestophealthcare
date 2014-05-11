@@ -1,0 +1,45 @@
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Form Name</legend>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="FoodPlate">What is in your food plate?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="FoodPlate-0">
+      <input type="checkbox" name="FoodPlate" id="FoodPlate-0" value="1">
+      Fruits(i.e: apple, grapes, banana, oranges)
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="FoodPlate-1">
+      <input type="checkbox" name="FoodPlate" id="FoodPlate-1" value="2">
+      Vegetables(i.e: broccoli, spinach, cabbage, carrots)
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="FoodPlate-2">
+      <input type="checkbox" name="FoodPlate" id="FoodPlate-2" value="">
+      Grains(i.e: oatmeal, white bread, white rice, spaghetti, noodles)
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="FoodPlate-3">
+      <input type="checkbox" name="FoodPlate" id="FoodPlate-3" value="">
+      Protein Foods(i.e: meats, poultry, eggs, beans and peas, nuts and seeds, sea food)
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="FoodPlate-4">
+      <input type="checkbox" name="FoodPlate" id="FoodPlate-4" value="">
+      Diary(i.e:milk, cheese, yogurt, soy milk)
+    </label>
+	</div>
+  </div>
+</div>
+
+</fieldset>
+</form>
