@@ -36,208 +36,196 @@
   </div>
 </div>
 
-<!-- Multiple Radios -->
+<!-- Multiple Checkboxes -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Today, how many glasses of water you have drink?</label>
+  <label class="col-md-4 control-label" for="checkboxes">Today, are you feel stress?</label>
   <div class="col-md-4">
-  <div class="radio">
-    <label for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="" checked="checked">
-      0
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      Yes
     </label>
 	</div>
-  <div class="radio">
-    <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="">
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+      No
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Today, are you feel stress?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      Yes
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+      No
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Today, are you feel happy?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      Yes
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+      No
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Today, do you go for exercise?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      Yes
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+      No
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Today, do you eat any fruit?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      Yes
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+      No
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Do you go for work? If yes, normally how many hour you will spend on your working?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
       1-5
     </label>
 	</div>
-  <div class="radio">
-    <label for="radios-2">
-      <input type="radio" name="radios" id="radios-2" value="">
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
       6-10
     </label>
 	</div>
-  <div class="radio">
-    <label for="radios-3">
-      <input type="radio" name="radios" id="radios-3" value="">
+  <div class="checkbox">
+    <label for="checkboxes-2">
+      <input type="checkbox" name="checkboxes" id="checkboxes-2" value="">
       &gt;10
     </label>
 	</div>
   </div>
 </div>
 
-<!-- Multiple Radios -->
+<!-- Multiple Checkboxes -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Today, are you feel stress?</label>
+  <label class="col-md-4 control-label" for="checkboxes">Do you have the habit of eating breakfast?</label>
   <div class="col-md-4">
-  <div class="radio">
-    <label for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
       Yes
     </label>
 	</div>
-  <div class="radio">
-    <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="2">
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
       No
     </label>
 	</div>
   </div>
 </div>
 
-<!-- Multiple Radios -->
+<!-- Multiple Checkboxes -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Today, are you feel happy?</label>
+  <label class="col-md-4 control-label" for="checkboxes">Do you have the habit of eating supper?</label>
   <div class="col-md-4">
-  <div class="radio">
-    <label for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
       Yes
     </label>
 	</div>
-  <div class="radio">
-    <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="2">
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
       No
     </label>
 	</div>
   </div>
 </div>
 
-<!-- Multiple Radios -->
+<!-- Multiple Checkboxes -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Today, do you go for exercise?</label>
+  <label class="col-md-4 control-label" for="checkboxes">Are you a smoker?</label>
   <div class="col-md-4">
-  <div class="radio">
-    <label for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
       Yes
     </label>
 	</div>
-  <div class="radio">
-    <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="2">
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
       No
     </label>
 	</div>
   </div>
 </div>
 
-<!-- Multiple Radios -->
+<!-- Multiple Checkboxes -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Today, do you eat any fruit?</label>
+  <label class="col-md-4 control-label" for="checkboxes">Are you taking any alcoholic drink?</label>
   <div class="col-md-4">
-  <div class="radio">
-    <label for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
       Yes
     </label>
 	</div>
-  <div class="radio">
-    <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="2">
-      No
-    </label>
-	</div>
-  </div>
-</div>
-
-<!-- Multiple Radios -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Do you go for work? If yes, normally how many hour you will spend on your working?</label>
-  <div class="col-md-4">
-  <div class="radio">
-    <label for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
-      1-5
-    </label>
-	</div>
-  <div class="radio">
-    <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="2">
-      6-10
-    </label>
-	</div>
-  <div class="radio">
-    <label for="radios-2">
-      <input type="radio" name="radios" id="radios-2" value="">
-      &gt;10
-    </label>
-	</div>
-  </div>
-</div>
-
-<!-- Multiple Radios -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Do you have the habit of eating breakfast?</label>
-  <div class="col-md-4">
-  <div class="radio">
-    <label for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
-      Yes
-    </label>
-	</div>
-  <div class="radio">
-    <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="2">
-      No
-    </label>
-	</div>
-  </div>
-</div>
-
-<!-- Multiple Radios -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Do you have the habit of eating supper?</label>
-  <div class="col-md-4">
-  <div class="radio">
-    <label for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
-      Yes
-    </label>
-	</div>
-  <div class="radio">
-    <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="2">
-      No
-    </label>
-	</div>
-  </div>
-</div>
-
-<!-- Multiple Radios -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Are you a smoker?</label>
-  <div class="col-md-4">
-  <div class="radio">
-    <label for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
-      Yes
-    </label>
-	</div>
-  <div class="radio">
-    <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="2">
-      No
-    </label>
-	</div>
-  </div>
-</div>
-
-<!-- Multiple Radios -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Are you taking alcohol?</label>
-  <div class="col-md-4">
-  <div class="radio">
-    <label for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
-      Yes
-    </label>
-	</div>
-  <div class="radio">
-    <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="2">
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
       No
     </label>
 	</div>
