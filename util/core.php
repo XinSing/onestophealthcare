@@ -7,5 +7,3 @@ if ($db->connect_errno)
 	die("Unable to enstablish connection to database: " . $this->con->connect_error);
 	
 session_start();
-
-$css[] = 'base';
