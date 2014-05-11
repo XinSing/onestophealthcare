@@ -1,6 +1,8 @@
 <div class='container'>
+		<h2 class='pull-left' style='width:100%'>Welcome, <?php echo $_SESSION['user'] ?><a href="logout.php" class='btn btn-success pull-right'>Log out</a></h2>
+		
 	<div class='row'>
-		<a href="logout.php" class='btn btn-success pull-right'>Log out</a>
+		<br>
 		<br>
 		<br>
 		<br>
