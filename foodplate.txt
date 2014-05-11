@@ -4,6 +4,31 @@
 <!-- Form Name -->
 <legend>Form Name</legend>
 
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="walk">Today, how many distance you walk for?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="walk-0">
+      <input type="radio" name="walk" id="walk-0" value="1" checked="checked">
+      Less than 1 km
+    </label>
+	</div>
+  <div class="radio">
+    <label for="walk-1">
+      <input type="radio" name="walk" id="walk-1" value="2">
+      Between 1 to 2 km
+    </label>
+	</div>
+  <div class="radio">
+    <label for="walk-2">
+      <input type="radio" name="walk" id="walk-2" value="">
+      More than 2km
+    </label>
+	</div>
+  </div>
+</div>
+
 <!-- Multiple Checkboxes -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="FoodPlate">What is in your food plate?</label>
