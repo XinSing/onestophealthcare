@@ -12,7 +12,7 @@
 		
     </script>
 <div class='result' style='width:70%; margin:auto; display:none'>
-	<h2 class='text-left'>Your lifestyle scored: <span id='score' class='asd'></span>%</h2>
+	<h2 class='text-left'>Your Health Level: <span id='score' class='asd'></span>%</h2>
 	<div class="progress progress-striped active">
 	  <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
 	  </div>
@@ -284,6 +284,7 @@
 
 </div>
 </div>
+
 <script>
 	function drawVisualization() {
 		var wrapper = new google.visualization.ChartWrapper({
@@ -310,7 +311,7 @@
 					
 					if(bmi <= 18.5){
 						score += 15;
-						$('#resultanalysis').append("<li>You are under optimum weight for your height. You could afford to gain a little weight</li>");
+						$('#resultanalysis').append("<li>You are under optimum weight for your height. You could afford to gain a little weight.</li>");
 					}
 					else if(bmi <= 24.9){
 						score += 20;
@@ -329,27 +330,27 @@
 					score += parseInt(stress_score);
 					
 					if($('input[name="stress"]:checked').val()=='2')
-						$('#resultanalysis').append("<li>You should relax where you are, close your eyes, breathe deeply and slowly. Take a break, get some exercise and fresh air. Think positive.</li>");
+						$('#resultanalysis').append("<li>It makes no sense to worry about things you have no control over because there's nothing you can do about them, and why worry about things you do control? The activity of worrying keeps you immobilized. You must learn to let go. Release the stress. </li>");
 						
 					score += parseInt($('input[name="happy"]:checked').val());
 					score += parseInt($('input[name="exercise"]:checked').val());
 					if($('input[name="exercise"]:checked').val()=='2')
-						$('#resultanalysis').append("<li>You must go for exercise. It is good for your health.</li>");
+						$('#resultanalysis').append("<li>You will continue to burn fat after you jog. People who run at least four hours a week will burn more calories than non-runners, even when they are NOT running. Go Do Something That Makes You SWEAT!</li>");
 					score += parseInt($('input[name="working"]:checked').val());
 					if($('input[name="working"]:checked').val()=='1')
-						$('#resultanalysis').append("<li>Is it important to have enough rest time. Always remember : work life balance.</li>");
+						$('#resultanalysis').append("<li>Work is a rubber ball. If you drop it, it will bounce back. The other four balls-- family, health, friends, integrity-- are made of glass. If you drop one of these, it will be irrevocably scuffed, nicked, perhaps even shattered. Always remember : Work Life Balance.</li>");
 					score += parseInt($('input[name="eatbreakfast"]:checked').val());
 					if($('input[name="eatbreakfast"]:checked').val()=='3')
-						$('#resultanalysis').append("<li>You must maintain a habit of eating breakfast, because it is very important in your daily routine. Breakfast will give you energy for you to complete the task.</li>");
+						$('#resultanalysis').append("<li>According to the American Dietetic Association, people who eat breakfast have an easier time focusing and are more productive throughout the morning than people who skip breakfast. A healthy breakfast can provide your body with the nutrients that you need to stay energized for several hours and therefore may participate in more physical activity than people who skip breakfast. Skipping breakfast can make you feel grumpy and fatigued throughout the day. Taking just 10 minutes to eat something in the morning can really improve your mood.</li>");
 					score += parseInt($('input[name="eatsupper"]:checked').val());
 					if($('input[name="eatsupper"]:checked').val()=='3')
-						$('#resultanalysis').append("<li>Please keep away the habit of eating supper.</li>");
+						$('#resultanalysis').append("<li>Eating at night is a bad habit to get into because it doesn't leave enough time before going to bed to digest your food well. Start from today : Stop Eating At Night.</li>");
 					score += parseInt($('input[name="smoker"]:checked').val());
 					if($('input[name="smoker"]:checked').val()=='0')
-						$('#resultanalysis').append("<li>Do you know, smoke will cause illness and death. Please keep away from it.</li>");
+						$('#resultanalysis').append("<li>Smoking kills. If you're killed, you've lost a very important part of your life.</li>");
 					score += parseInt($('input[name="alcoholic"]:checked').val());
 					if($('input[name="alcoholic"]:checked').val()=='0')
-						$('#resultanalysis').append("<li>Alcoholic drink will cause liver damage, risk for experiencing various accidents. Please keep away from it.</li>");
+						$('#resultanalysis').append("<li>Quitting drinking can be a very long and difficult process. You didn`t develop an alcohol problem overnight so overcoming alcoholism will not happen overnight either. As tough as it is, it is not impossible and you should not give up. While you are quitting drinking it is important to stay strong, get support and seek treatment when needed. </li>");
 					score += parseInt($('input[name="walk"]:checked').val());
 					if($('input[name="FoodPlate1"]:checked').length > 0)
 					score += parseInt($('input[name="FoodPlate1"]').val());
@@ -362,10 +363,10 @@
 					if($('input[name="FoodPlate5"]:checked').length > 0)
 					score += parseInt($('input[name="FoodPlate5"]').val());
 					
-					$('#resultanalysis').append("<li>Fill half of your plate with vegetables and fruits. The more color, and the more variety, the better. </li>");
-					$('#resultanalysis').append("<li>Save a quarter of your plate for whole grains.</li>");
-					$('#resultanalysis').append("<li>Pick a healthy source of protein to fill one quarter of your plate</li>");
-					$('#resultanalysis').append("<li>Small amounts of fats, oils and sugar are acceptable, larger amounts of these foods will cause an inadequately varied food intake.</li>");
+					$('#resultanalysis').append("<li>FILL HALF OF YOUR PLATE WITH VEGETABLES AND FRUITS. THE MORE COLOR, AND THE MORE VARIETY, THE BETTER. </li>");
+					$('#resultanalysis').append("<li>SAVE A QUARTER OF YOUR PLATE FOR WHOLE GRAINS.</li>");
+					$('#resultanalysis').append("<li>PICK A HEALTHY SOURCE OF PROTEIN TO FILL ONE QUARTER OF YOUR PLATE</li>");
+					$('#resultanalysis').append("<li>SMALL AMOUNTS OF FATS, OILS AND SUGAR ARE ACCEPTABLE. LARGER AMOUNTS OF THESE FOODS WILL CAUSE AN INADEQUATELY VARIED FOOD INTAKE.</li>");
 					
 					
 					//finish calculate
@@ -386,7 +387,7 @@
 					else if(score > 40)
 					{
 						$('#score').addClass("text-warning");
-						$('.result').prepend("<h1 class='text-warning'>Uh ohh.</h1>");
+						$('.result').prepend("<h1 class='text-warning'>OOPS....</h1>");
 						$('.progress-bar').addClass("progress-bar-warning");
 					}
 					else 
@@ -406,4 +407,5 @@
 		});
 	});
 </script>
+
     

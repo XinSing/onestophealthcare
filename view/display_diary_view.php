@@ -40,7 +40,7 @@
 <?php }else{ ?>
 
 
-<h1 class='text-center'> No diary entry found </h1>
+<h1 class='text-center'> No Diary Entry Found </h1>
 <div class='text-center'>
 <a href='health_diary.php' class='btn-info btn'>Create one now</a>
 </div>

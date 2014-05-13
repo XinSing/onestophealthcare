@@ -2,7 +2,7 @@
 <div class="modal fade" id="reminder1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
 		<div class="modal-content text-danger text-center" style='margin-top:15vh'>
-			<h1>Let your eye rest, do not face the computer screen for too long.</h1>
+			<h1>Let Your Eyes Rest, Do Not Face The Computer Screen For Too Long.</h1>
 		</div>
 		<div class='arrow-down' style='position:absolute;bottom:10px;right:-18px;'></div>
     </div>
@@ -10,7 +10,7 @@
 <div class="modal fade" id="reminder2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
 		<div class="modal-content text-danger text-center" style='margin-top:15vh'>
-			<h1>Don't forget to drink water <i class='fa fa-smile-o'></i></h1>
+			<h1>Don't Forget To Drink Water <i class='fa fa-smile-o'></i></h1>
 		</div>
 		<div class='arrow-down' style='position:absolute;bottom:10px;right:-18px;'></div>
     </div>
@@ -18,7 +18,7 @@
 <div class="modal fade" id="reminder3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
 		<div class="modal-content text-danger text-center" style='margin-top:15vh'>
-			<h1>Please have a break, stretching your body would helps</h1>
+			<h1>Please Have A Break, Stretching Your Body Would Helps</h1>
 		</div>
 		<div class='arrow-down' style='position:absolute;bottom:10px;right:-18px;'></div>
     </div>
@@ -35,12 +35,12 @@ function reminder(){
 	$('#reminder'+Math.floor((Math.random() * 3) + 1)).modal('show');
 	setTimeout(function(){	
 		hide_reminder();
-	},10000); // second and above
+	},100000); // second and above
 }
 
 setTimeout(function(){
 	reminder();
-},1000);//first time in milisecond
+},10000);//first time in milisecond
 </script>
 
 <style>
