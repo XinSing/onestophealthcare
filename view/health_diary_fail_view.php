@@ -3,10 +3,7 @@
  
 </ul>
 
-	
-
-
 <div class='container'>
-	<h1 class='text-center text-danger'>Sorry. You Have Not Complete Your Health Diary. Please Complete It Before You Submit!</h1>
+	<h1 class='text-center text-danger'>Sorry. Progress Fail! Please Insert Your Health Diary Again.</h1>
 	
 </div>

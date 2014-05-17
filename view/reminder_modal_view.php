@@ -18,11 +18,20 @@
 <div class="modal fade" id="reminder3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
 		<div class="modal-content text-danger text-center" style='margin-top:15vh'>
-			<h1>Please Have A Break, Stretching Your Body Would Helps</h1>
+			<h1>Take Frequent Short Breaks And Go For A Walk.</h1>
 		</div>
 		<div class='arrow-down' style='position:absolute;bottom:10px;right:-18px;'></div>
     </div>
 </div>
+<div class="modal fade" id="reminder3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+		<div class="modal-content text-danger text-center" style='margin-top:15vh'>
+			<h1>Do Stretching Exercises At Your Desk, Stand Often.</h1>
+		</div>
+		<div class='arrow-down' style='position:absolute;bottom:10px;right:-18px;'></div>
+    </div>
+</div>
+
 
 <script>
 function hide_reminder(){

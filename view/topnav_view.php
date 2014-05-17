@@ -14,7 +14,7 @@
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information Kiosk<b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="article.php">Healthy Kids</a></li>
+          <li><a href="#">Healthy Kids</a></li>
           <li><a href="#">Healthy Adult and Middle-Age People</a></li>
           <li><a href="#">Healthy Senior Citizens</a></li>
 		  <li><a href="#">Healthy Pregnancy</a></li>
@@ -32,6 +32,7 @@
           <li><a href="#">How to Manage Stress</a></li>
           <li><a href="#">How to Get Rid of Bad Habits</a></li>
           <li><a href="#">Stress Release Video</a></li>
+		  <li><a href="#">Stress Release Games</a></li>
 		  <li><a href="#">Sleeping Tips</a></li>
           <li><a href="#">Step-By-Step Learning Yoga</a></li>
 		  <li><a href="#">Details and Benefit of Each Yoga Style</a></li>
@@ -59,7 +60,7 @@
         </ul>
       </li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recommandation <b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recommendation <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="#">Hospital</a></li>
           <li><a href="#">Clinic</a></li>
@@ -69,11 +70,10 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">First Aid<b class="caret"></b></a>
         <ul class="dropdown-menu" style='right:0;left:auto;'>
           <li><a href="#">Heart Attacks</a></li>
-          <li><a href="#">Chect Pain</a></li>
+          <li><a href="#">Chest Pain</a></li>
           <li><a href="#">Burn</a></li>
           <li><a href="#">Cuts</a></li>
           <li><a href="#">Stroke</a></li>
-		  <li><a href="#">Resuscitation</a></li>
 		  <li><a href="#">Abdominal Injuries</a></li>
 		  <li><a href="#">Asthma</a></li>
 		  <li><a href="#">Allergic Reaction</a></li>

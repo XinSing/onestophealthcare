@@ -15,7 +15,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Date :</label>  
   <div class="col-md-3">
-  <input id="textinput" name="date" type="date" placeholder="" class="form-control input-md">
+  <input id="textinput" name="date" type="date" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -72,10 +72,9 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">In Total, How Many Hours Did You Sleep Last Night?</label>  
-  <div class="col-md-2">
+  <label class="col-md-4 control-label" for="textinput">In Total, How Many Hours Did You Sleep Last Night?</label>  <div class="col-md-2">
     <div class="input-group">
-      <input id="appendedtext" name="sleep" class="form-control" placeholder="" type="number">
+      <input id="appendedtext" name="sleep" class="form-control" placeholder="" type="number" required>
       <span class="input-group-addon">Hours</span>
     </div>
   </div>
@@ -86,7 +85,7 @@
   <label class="col-md-4 control-label" for="appendedtext">How long did You Exercise Today?</label>
   <div class="col-md-3">
     <div class="input-group">
-      <input id="appendedtext" name="exercise" class="form-control" placeholder="" type="number">
+      <input id="appendedtext" name="exercise" class="form-control" placeholder="" type="number" required>
       <span class="input-group-addon">Minutes</span>
     </div>
   </div>
@@ -110,7 +109,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">How many cups of caffeinated drinks did you Consume today? </label>
   <div class="col-md-2">                     
-    <input type='number' name='coffee' class='form-control'/>
+    <input type='number' name='coffee' class='form-control' required>
   </div>
 </div>
 

@@ -4,13 +4,13 @@
 		<li><a href="selftracking.php">&larr; Back</a></li>
  
 </ul>
-<script type="text/javascript" src="//www.google.com/jsapi"></script>
+ <script type="text/javascript" src="//www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load('visualization', '1');
     </script>
-    <script type="text/javascript">
+    <script type="text/javascript"> 
 		
-    </script>
+    </script>   
 <div class='result' style='width:70%; margin:auto; display:none'>
 	<h2 class='text-left'>Your Health Level: <span id='score' class='asd'></span>%</h2>
 	<div class="progress progress-striped active">
@@ -18,12 +18,16 @@
 	  </div>
 	</div>
 	<br/>
-	<div id="visualization" style="width: 600px; height: 400px;"></div>
+	<!--<div id="visualization" style="width: 600px; height: 400px;"></div> -->
 	<br/>
 	<div>
+		<h1 class='text-center text-primary'>Lets Check For Your Health Level Analysis: </h1>
 		<ul id='resultanalysis' style='font-size:18px;'>
 		
 		</ul>
+	</div>
+	<div class="text-center">
+		<img src ="/onestophealthcare/res/img/HealthQuote.jpg" />
 	</div>
 	
 </div>
@@ -55,6 +59,14 @@
 
 <!-- Form Name -->
 <legend class='col-md-9'>What are You Waiting For? Let`s Begin Your Health Journey Now!</legend>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Date :</label>  
+  <div class="col-md-3">
+  <input id="textinput" name="date" type="date" placeholder="" class="form-control input-md" required>
+    
+  </div>
+</div>
 
 <!-- Text input-->
 <div class="form-group">
@@ -265,7 +277,7 @@
   <div class="checkbox">
     <label for="FoodPlate-4">
       <input type="checkbox" name="FoodPlate5" id="FoodPlate-4" value="3">
-      Diary (i.e:milk, cheese, yogurt, soy milk)
+      Dairy (i.e:milk, cheese, yogurt, soy milk)
     </label>
 	</div>
   </div>
@@ -286,24 +298,16 @@
 </div>
 
 <script>
-	function drawVisualization() {
-		var wrapper = new google.visualization.ChartWrapper({
-		  chartType: 'ColumnChart',
-		  dataTable: [['%', '23/5/13', '24/5/13', '25/5/13', '26/5/13', '27/5/13'],
-					  ['Date', 60, 70, 80, 70, 80]],
-		  options: {'title': 'Score record'},
-		  containerId: 'visualization'
-		});
-		wrapper.draw();
-	}
 	
 	$(document).ready(function(){
 		$('.form').submit(function(){
 		
-			
-		
-			$(this).fadeOut(1000, function(){
+			    $(this).fadeOut(1000, function(){
 				$('.spinner').fadeIn(1000).delay(300).fadeOut(400,function(){
+					
+					
+					
+					
 					//start calculation
 					var score = 0;
 					
@@ -311,46 +315,46 @@
 					
 					if(bmi <= 18.5){
 						score += 15;
-						$('#resultanalysis').append("<li>You are under optimum weight for your height. You could afford to gain a little weight.</li>");
+						$('#resultanalysis').append("<li>YOU ARE UNDER OPTIMUM WEIGHT FOR YOUR HEIGHT. YOU COULD AFFORD TO GAIN A LITTLE WEIGHT.</li>");
 					}
 					else if(bmi <= 24.9){
 						score += 20;
-						$('#resultanalysis').append("<li>You have a healthy weight for your height</li>");
+						$('#resultanalysis').append("<li>YOU HAVE A HEALTHY WEIGHT FOR YOUR HEIGHT.</li>");
 					}
 					else if(bmi <= 29.9){
 						score += 10;
-						$('#resultanalysis').append("<li>You are over optimum weight for your height. You may be facing health Problems, so losing some weight would be a good idea.</li>");
+						$('#resultanalysis').append("<li>YOU ARE OVER OPTIMUM WEIGHT FOR YOUR HEIGHT. YOU MAY BE FACING HEALTH PROBLEMS. SO LOSING SOME WEIGHT WOULD BE A GOOD IDEA.</li>");
 					}
 					else{
 						score += 3;
-						$('#resultanalysis').append("<li>You are over optimum weight for your height. You may be facing health risks, so See your doctor to help you achieve a healthier weight.</li>");
+						$('#resultanalysis').append("<li>YOU ARE OVER OPTIMUM WEIGHT FOR YOUR HEIGHT. YOU MAY BE FACING HEALTH RISK. SO SEE YOU DOCTOR TO HELP YOU ACHIEVE A HEALTHIER WEIGHT.</li>");
 					}
 					
 					var stress_score = $('input[name="stress"]:checked').val();
 					score += parseInt(stress_score);
 					
 					if($('input[name="stress"]:checked').val()=='2')
-						$('#resultanalysis').append("<li>It makes no sense to worry about things you have no control over because there's nothing you can do about them, and why worry about things you do control? The activity of worrying keeps you immobilized. You must learn to let go. Release the stress. </li>");
+						$('#resultanalysis').append("<li>It makes no sense to worry about things you have no control over because there's nothing you can do about them. You must learn to let go. Release the stress. </li>");
 						
 					score += parseInt($('input[name="happy"]:checked').val());
 					score += parseInt($('input[name="exercise"]:checked').val());
 					if($('input[name="exercise"]:checked').val()=='2')
-						$('#resultanalysis').append("<li>You will continue to burn fat after you jog. People who run at least four hours a week will burn more calories than non-runners, even when they are NOT running. Go Do Something That Makes You SWEAT!</li>");
+						$('#resultanalysis').append("<li>You will continue to burn fat after you jog. People who run at least four hours a week will burn more calories than non-runners. Go Do Something That Makes You SWEAT!</li>");
 					score += parseInt($('input[name="working"]:checked').val());
 					if($('input[name="working"]:checked').val()=='1')
-						$('#resultanalysis').append("<li>Work is a rubber ball. If you drop it, it will bounce back. The other four balls-- family, health, friends, integrity-- are made of glass. If you drop one of these, it will be irrevocably scuffed, nicked, perhaps even shattered. Always remember : Work Life Balance.</li>");
+						$('#resultanalysis').append("<li>It is important to have balance in your life between work, friends and family. Always remember : Work Life Balance. 8 HOURS LABOUR, 8 HOURS RECREATION, 8 HOURS REST </li>");
 					score += parseInt($('input[name="eatbreakfast"]:checked').val());
 					if($('input[name="eatbreakfast"]:checked').val()=='3')
-						$('#resultanalysis').append("<li>According to the American Dietetic Association, people who eat breakfast have an easier time focusing and are more productive throughout the morning than people who skip breakfast. A healthy breakfast can provide your body with the nutrients that you need to stay energized for several hours and therefore may participate in more physical activity than people who skip breakfast. Skipping breakfast can make you feel grumpy and fatigued throughout the day. Taking just 10 minutes to eat something in the morning can really improve your mood.</li>");
+						$('#resultanalysis').append("<li>People who eat breakfast have an easier time focusing and are more productive throughout the morning than people who skip breakfast. A healthy breakfast can provide your body with the nutrients that you need to stay energized for several hours and therefore may participate in more physical activity than people who skip breakfast. Skipping breakfast can make you feel grumpy and fatigued throughout the day. Taking just 10 minutes to eat something in the morning can really improve your mood.</li>");
 					score += parseInt($('input[name="eatsupper"]:checked').val());
 					if($('input[name="eatsupper"]:checked').val()=='3')
-						$('#resultanalysis').append("<li>Eating at night is a bad habit to get into because it doesn't leave enough time before going to bed to digest your food well. Start from today : Stop Eating At Night.</li>");
+						$('#resultanalysis').append("<li>Eating at night is a bad habit to get into because it doesn't leave enough time before going to bed to digest your food well. Start from today : STOP EATING AT NIGHT.</li>");
 					score += parseInt($('input[name="smoker"]:checked').val());
 					if($('input[name="smoker"]:checked').val()=='0')
-						$('#resultanalysis').append("<li>Smoking kills. If you're killed, you've lost a very important part of your life.</li>");
+						$('#resultanalysis').append("<li>SMOKING KILLS. If you're killed, you've lost a very important part of your life.</li>");
 					score += parseInt($('input[name="alcoholic"]:checked').val());
 					if($('input[name="alcoholic"]:checked').val()=='0')
-						$('#resultanalysis').append("<li>Quitting drinking can be a very long and difficult process. You didn`t develop an alcohol problem overnight so overcoming alcoholism will not happen overnight either. As tough as it is, it is not impossible and you should not give up. While you are quitting drinking it is important to stay strong, get support and seek treatment when needed. </li>");
+						$('#resultanalysis').append("<li>Quitting drinking can be a very long and difficult process. It is not impossible and you should not give up. While you are quitting drinking it is important to stay strong, get support and seek treatment when needed. </li>");
 					score += parseInt($('input[name="walk"]:checked').val());
 					if($('input[name="FoodPlate1"]:checked').length > 0)
 					score += parseInt($('input[name="FoodPlate1"]').val());
@@ -364,9 +368,8 @@
 					score += parseInt($('input[name="FoodPlate5"]').val());
 					
 					$('#resultanalysis').append("<li>FILL HALF OF YOUR PLATE WITH VEGETABLES AND FRUITS. THE MORE COLOR, AND THE MORE VARIETY, THE BETTER. </li>");
-					$('#resultanalysis').append("<li>SAVE A QUARTER OF YOUR PLATE FOR WHOLE GRAINS.</li>");
-					$('#resultanalysis').append("<li>PICK A HEALTHY SOURCE OF PROTEIN TO FILL ONE QUARTER OF YOUR PLATE</li>");
-					$('#resultanalysis').append("<li>SMALL AMOUNTS OF FATS, OILS AND SUGAR ARE ACCEPTABLE. LARGER AMOUNTS OF THESE FOODS WILL CAUSE AN INADEQUATELY VARIED FOOD INTAKE.</li>");
+					$('#resultanalysis').append("<li>PICK A HEALTHY SOURCE OF PROTEIN AND ALSO TAKE SOME WHOLE GRAIN FOOD.</li>");
+					$('#resultanalysis').append("<li>SMALL AMOUNTS OF FATS, OILS AND SUGAR ARE ACCEPTABLE.</li>");
 					
 					
 					//finish calculate
@@ -375,7 +378,7 @@
 					if(score > 80)
 					{
 						$('#score').addClass("text-success");
-						$('.result').prepend("<h1 class='text-success'>Congratulation!!</h1>");
+						$('.result').prepend("<h1 class='text-success'>Congratulation!!!</h1>");
 						$('.progress-bar').addClass("progress-bar-success");
 					}
 					else if(score > 60)
@@ -393,7 +396,7 @@
 					else 
 					{
 						$('#score').addClass("text-danger");
-						$('.result').prepend("<h1 class='text-danger'>Caution!!</h1>");
+						$('.result').prepend("<h1 class='text-danger'>CAUTION!!!</h1>");
 						$('.progress-bar').addClass("progress-bar-danger");
 					}
 						
@@ -406,6 +409,7 @@
 			return false;
 		});
 	});
+	
 </script>
 
     

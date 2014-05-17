@@ -11,7 +11,7 @@
   <li><a href="#">I</a></li>
   <li><a href="#">J</a></li>
   <li><a href="#">K</a></li>
-  <li><a href="#">L</a></li>
+  <li><a href="food_nutrition_L.php">L</a></li>
   <li><a href="#">M</a></li>
   <li><a href="#">N</a></li>
   <li><a href="#">O</a></li>
@@ -24,7 +24,7 @@
   <li><a href="#">V</a></li>
   <li><a href="#">W</a></li>
   <li><a href="#">X</a></li>
-  <li><a href="#">Y</a></li>
+  <li><a href="food_nutrition_Y.php">Y</a></li>
   <li><a href="#">Z</a></li>
 <div class="container">
 <img src='/onestophealthcare/res/img/B.png' />

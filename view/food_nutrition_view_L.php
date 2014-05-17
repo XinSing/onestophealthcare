@@ -1,4 +1,5 @@
 <div class='container'>
+
 <ul class="pagination">
   <li><a href="food_nutrition.php">A</a></li>
   <li><a href="food_nutrition_B.php">B</a></li>
@@ -27,8 +28,6 @@
   <li><a href="food_nutrition_Y.php">Y</a></li>
   <li><a href="#">Z</a></li>
 <div class="container">
-<img src='/onestophealthcare/res/img/A.png' />
+<img src='/onestophealthcare/res/img/L.png' />
 </div>
-
-</ul>
-
+</div>

@@ -8,18 +8,18 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Username*</label>  
+  <label class="col-md-4 control-label" for="textinput">Username</label>  
   <div class="col-md-4">
-  <input id="textinput" name="un" type="text" placeholder="Username" class="form-control input-md">
+  <input id="textinput" name="un" type="text" placeholder="Username" class="form-control input-md" required>
     
   </div>
 </div>
 
 <!-- Password input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="passwordinput">Password* </label>
+  <label class="col-md-4 control-label" for="passwordinput">Password </label>
   <div class="col-md-4">
-    <input id="passwordinput" name="pw" type="password" placeholder="Password" class="form-control input-md">
+    <input id="passwordinput" name="pw" type="password" placeholder="Password" class="form-control input-md" required>
     
   </div>
 </div>
@@ -35,27 +35,27 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Full Name*</label>  
+  <label class="col-md-4 control-label" for="textinput">Full Name</label>  
   <div class="col-md-4">
-  <input id="textinput" name="fn" type="text" placeholder="FullName" class="form-control input-md">
+  <input id="textinput" name="fn" type="text" placeholder="FullName" class="form-control input-md" required>
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Email Address*</label>  
+  <label class="col-md-4 control-label" for="textinput">Email Address</label>  
   <div class="col-md-4">
-  <input id="textinput "  name="em" type="text" placeholder="EmailAddress" class="form-control input-md">
+  <input id="emailinput "  name="em" type="email" placeholder="EmailAddress" class="form-control input-md" required>
   
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Contact Number*</label>  
+  <label class="col-md-4 control-label" for="textinput">Contact Number</label>  
   <div class="col-md-4">
-  <input id="textinput" name="cn" type="text" placeholder="ContactNumber" class="form-control input-md">
+  <input id="textinput" name="cn" type="text" placeholder="ContactNumber" class="form-control input-md" required>
     
   </div>
 </div>
@@ -72,28 +72,7 @@
 </form>
 </div>
 
-<script  type="text/javascript">
 
- var frmvalidator = new Validator("New User Registration");
- frmvalidator.addValidation("un","req","Please enter your Username");
- frmvalidator.addValidation("un,"maxlen=20","Max length for Username is 20");
- 
- frmvalidator.addValidation("pw","req");
- frmvalidator.addValidation("pw","maxlen=20");
- 
- frmvalidator.addValidation("pw2","req");
- frmvalidator.addValidation("pw2","maxlen=20");
- 
- frmvalidator.addValidation("fn","req","Please enter your Full Name");
- frmvalidator.addValidation("fn","maxlen=20","Max length for Full Name is 20");
- 
- frmvalidator.addValidation("em","maxlen=50");
- frmvalidator.addValidation("em","req");
- frmvalidator.addValidation("em","email");
- 
- frmvalidator.addValidation("cn","maxlen=50");
- frmvalidator.addValidation("cn","numeric");
- 
 
 
 </script>

@@ -4,11 +4,10 @@
  
 </ul>
 
-	
-
-
 <div class='container'>
-	<h1 class='text-center text-success'>Well Down. You have Created One Health Diary. Keep It On.</h1>
+	<h1 class='text-center text-success'>Well Down. You Have Created Your Own Health Diary Successfully. Keep It On.</h1>
+<div class = "text-center">	
 	<img src="/onestophealthcare/res/img/Congratulation.png" >
+</div>	
 </div>
 
