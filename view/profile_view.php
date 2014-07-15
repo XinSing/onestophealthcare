@@ -60,6 +60,7 @@
 
 	</div>
 </div>
+<a href="profile_song.php" class='btn btn-primary pull-right'>Song</a>
 <style>
 .thumbnail{
 	height : 480px;
