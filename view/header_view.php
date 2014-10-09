@@ -53,4 +53,5 @@ $('.topheader').remove();
 <?php 
 require 'view/topnav_view.php';
 require "view/reminder_modal_view.php";
+require "view/modal_dialogs_view.php";
 ?>

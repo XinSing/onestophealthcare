@@ -12,31 +12,23 @@
         <a href="index.php">Home</a>
       </li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information Kiosk<b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Articles<b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Healthy Kids</a></li>
-          <li><a href="#">Healthy Adult and Middle-Age People</a></li>
-          <li><a href="#">Healthy Senior Citizens</a></li>
-		  <li><a href="#">Healthy Pregnancy</a></li>
-          <li><a href="#">Disease Session</a></li>
-		  <li><a href="#">Herbal Corner</a></li>
-		  <li><a href="#">Knowledge of Exercise and Keep Fit</a></li>
-		  <li><a href="#">Knowledge of Beauty</a></li>
-		  <li><a href="#">Health Video</a></li>
+		  <?php
+		  foreach($article_category as $ac){
+			echo "<li><a href='article.php?category=$ac[id]'>$ac[category]</a></li>";
+		  }
+		  ?>
         </ul>
       </li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Stress Management<b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Videos<b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Symptom of Stress</a></li>
-          <li><a href="#">How to Manage Stress</a></li>
-          <li><a href="#">How to Get Rid of Bad Habits</a></li>
-          <li><a href="#">Stress Release Video</a></li>
-		  <li><a href="#">Stress Release Games</a></li>
-		  <li><a href="#">Sleeping Tips</a></li>
-          <li><a href="#">Step-By-Step Learning Yoga</a></li>
-		  <li><a href="#">Details and Benefit of Each Yoga Style</a></li>
-		  <li><a href="#">Yoga Learning Video</a></li>
+		  <?php
+		  foreach($videos as $v){
+			echo "<li><a href='video.php?vid=$v[id]'>$v[title]</a></li>";
+		  }
+		  ?>
         </ul>
       </li>
       <li class="dropdown">
@@ -55,7 +47,7 @@
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Self-Improvement<b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Exercise Your Brain</a></li>
+          <li><a href="quiz.php">Exercise Your Brain</a></li>
           <li><a href="#">Children Corner</a></li>
         </ul>
       </li>
@@ -88,5 +80,11 @@
         </ul>
       </li>
     </ul>
+	<form class="navbar-form navbar-right" role="search" action='search.php' method='GET'>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name='keyword' required>
+      </div>
+      <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+    </form>
   </div>
 </div><!-- end of navbar -->

@@ -2,9 +2,13 @@
 
 $js[] = 'jquery-1.11.0.min';
 $js[] = 'bootstrap.min';
+$js[] = 'modernizr-2.6.2.min';
+$js[] = 'polyfills';
+$js[] = 'ckeditor/ckeditor';
 $css[] = 'bootstrap.min';
 //$css[] = 'bootstrap-theme.min';
 $css[] = 'font-awesome.min';
+$css[] = 'btm-nav';
 $css[] = 'base';
 
 define('DB_HOST', '127.0.0.1');

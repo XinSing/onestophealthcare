@@ -7,3 +7,7 @@ if ($db->connect_errno)
 	die("Unable to enstablish connection to database: " . $this->con->connect_error);
 	
 session_start();
+
+$article_category = get_all_article_categories($db);
+$videos = get_all_videos($db);
+

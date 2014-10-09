@@ -44,12 +44,12 @@ function reminder(){
 	$('#reminder'+Math.floor((Math.random() * 3) + 1)).modal('show');
 	setTimeout(function(){	
 		hide_reminder();
-	},100000); // second and above
+	},100000000); // second and above
 }
 
 setTimeout(function(){
 	reminder();
-},10000);//first time in milisecond
+},10000000000);//first time in milisecond
 </script>
 
 <style>

@@ -37,9 +37,7 @@
 			  <div class="caption">
 				<h2 class='text-center'>Information Kiosk</h2>
 				<p class='text-center'><br/>
-				<a href="construction.php" class="btn btn-info" role="button">Add </a>
-				<a href="construction.php" class="btn btn-warning" role="button">Edit </a>
-				<a href="construction.php" class="btn btn-primary" role="button">Delete </a>
+				<a href="article.php" class="btn btn-info" role="button">Manage </a>
 				</p>
 			  </div>
 			
