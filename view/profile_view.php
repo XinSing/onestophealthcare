@@ -32,14 +32,13 @@
 		</div>
 		<div class='col-sm-6 col-md-3'>
 			<div class="thumbnail">
-			  <img src="/onestophealthcare/res/img/history.png" >
+			  <img src="/onestophealthcare/res/img/songtherapy.jpg" >
 			  <div class="caption">
-				<h2>History</h2>
-				<li><h4>Allowing you to view back the important information that have been previously search for</h4></li>
-				<li><h5>View by Date and Time</h5></li>
-				<li><h5>View by Alphabet</h5></li>
-				<li><h5>View by Module</h5></li>
-				<p><a href="history.php" class="btn btn-warning" role="button">History</a> </p>
+				<h2>Song Therapy</h2>
+				<li><h4>Apart from doing charity, but also can manage and promote good health</h4></li>
+				<li><h4>RM0.01 will be charged for one song and donated out. </h4></li>
+				<li><h4>Music can improve quality of life and release stress</h4></li>
+				<p><a href="profile_song.php" class="btn btn-warning" role="button">Song</a> </p>
 			  </div>
 			</div>
 		</div>
@@ -49,9 +48,9 @@
 			  <div class="caption">
 				<h2>Self-Tracking</h2>
 				<li><h4>Allowing you to keep track of what you are eating daily</h4></li>
-				<li><h4>Calculation of BMI, daily nutrition consumption and health level </h4></li>
-				<li><h5>Health Diary</h5></li>
-				<li><h5>Track My Progress</h5></li>
+				<li><h4>Calculation of BMI and keep track of your health level</h4></li>
+			    <li><h4>A healthy food plate will be suggested </h4></li>
+				
 				
 				<p><a href="selftracking.php" class="btn btn-info" role="button">Self-Tracking</a> </p>
 			  </div>
@@ -59,8 +58,6 @@
 		</div>
 
 	</div>
-</div>
-<a href="profile_song.php" class='btn btn-primary pull-right'>Song</a>
 <style>
 .thumbnail{
 	height : 480px;

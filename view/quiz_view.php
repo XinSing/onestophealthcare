@@ -1,5 +1,5 @@
 <div class='container'>
-<h1>Quiz: How well you know about health?</h1>
+<h1 class = 'text-success'>Quizzes: How Well You Know About Health?</h1>
 <div class="jumbotron">
 	<h3>Progress: <small class='pull-right'>Question <span id='questionnumber'>1</span> of <span id='totalQ'></span></small></h3>
 	<div class="progress progress-striped active">
@@ -48,92 +48,92 @@
 	
 	<!-- question 2 -->
 	<div class='ques' id='q2' style='display:none'>
-		<h2>2) On average, what percentage of your sleeping hours is spent dreaming? </h2>
+		<h2>2) Which of these can cause insomnia? </h2>
 		<div style='margin-left:60px;'>
 			<div class="radio">
 			  <label>
 				<input type="radio" name="option2" value="0" checked>
-				5%-10% 
+				A cool bedroom 
 			  </label>
 			</div>
 			<div class="radio">
 			  <label>
 				<input type="radio" name="option2" value="1">
-				20%-25% 
+				A late dinner
 			  </label>
 			</div>
 			<div class="radio">
 			  <label>
 				<input type="radio" name="option2" value="0">
-				45%-50% 
+				Going to bed at the same time every night
 			  </label>
 			</div>
 			<div class="radio">
 			  <label>
 				<input type="radio" name="option2" value="0">
-				65%-70% 
+				All of the above 
 			  </label>
 			</div>
 		</div>
 		<p style='display:none'>
-			<span class="label label-success" style='display:none'><span class="glyphicon glyphicon-ok"></span> Correct!</span> <span class="label label-danger" style='display:none'><span class="glyphicon glyphicon-remove"></span> Incorrect!</span> > On average, 20% to 25% of your sleep is a dream state. For most people, that is more than two hours of dreaming every night. 
+			<span class="label label-success" style='display:none'><span class="glyphicon glyphicon-ok"></span> Correct!</span> <span class="label label-danger" style='display:none'><span class="glyphicon glyphicon-remove"></span> Incorrect!</span> > A heavy meal late in the day can keep you up at night. Jacking up the heat is also a bad idea. Keep your bedroom dark, quiet, and cool. A fan can cool it and drown out noise, if that's a problem. Some allergy, cold, and asthma medicines are other surprising sleep killers.
 		</p>
 	</div>
 	
 	
 	<!-- question 3 -->
 	<div class='ques' id='q3' style='display:none'>
-		<h2>3) On average, what percentage of your sleeping hours is spent dreaming? </h2>
+		<h2>3) You need at least how much sleep each night? </h2>
 		<div style='margin-left:60px;'>
 			<div class="radio">
 			  <label>
 				<input type="radio" name="option3" value="0" checked>
-				5%-10% 
+				Five hours
+			  </label>
+			</div>
+			<div class="radio">
+			  <label>
+				<input type="radio" name="option3" value="0">
+				Six hours
 			  </label>
 			</div>
 			<div class="radio">
 			  <label>
 				<input type="radio" name="option3" value="1">
-				20%-25% 
+				Seven hours 
 			  </label>
 			</div>
 			<div class="radio">
 			  <label>
 				<input type="radio" name="option3" value="0">
-				45%-50% 
-			  </label>
-			</div>
-			<div class="radio">
-			  <label>
-				<input type="radio" name="option3" value="0">
-				65%-70% 
+				Eight hours
 			  </label>
 			</div>
 		</div>
 		<p style='display:none'>
-			<span class="label label-success" style='display:none'><span class="glyphicon glyphicon-ok"></span> Correct!</span> <span class="label label-danger" style='display:none'><span class="glyphicon glyphicon-remove"></span> Incorrect!</span> > On average, 20% to 25% of your sleep is a dream state. For most people, that is more than two hours of dreaming every night. 
+			<span class="label label-success" style='display:none'><span class="glyphicon glyphicon-ok"></span> Correct!</span> <span class="label label-danger" style='display:none'><span class="glyphicon glyphicon-remove"></span> Incorrect!</span> > Only a tiny portion of people can get by on six hours of sleep. Those who claim to function well on four hours are likely deluding themselves. Most adults need seven or more hours of sleep a night.
 		</p>
 	</div>
 	
 	<div class='ques' id='q4' style='display:none'>
-		<h2> 4) Odors can affect the quality of your dreams. </h2>
+		<h2> 4) Sleepwalking isn`t dangerous </h2>
 		<div style='margin-left:60px;'>
 			<div class="radio">
 			  <label>
-				<input type="radio" name="option4" value="1" checked>
+				<input type="radio" name="option4" value="0" checked>
 				True 
 			  </label>
 			</div>
 			<div class="radio">
 			  <label>
-				<input type="radio" name="option4" value="0">
+				<input type="radio" name="option4" value="1">
 				False 
 			  </label>
 			</div>
 			
 		</div>
 		<p style='display:none'>
-			<span class="label label-success" style='display:none'><span class="glyphicon glyphicon-ok"></span> Correct!</span> <span class="label label-danger" style='display:none'><span class="glyphicon glyphicon-remove"></span> Incorrect!</span> >  When researchers presented sleeping volunteers with odors of rotten eggs or roses, the subjects who smelled rotten eggs reported more bad dreams while the subjects who smelled roses reported more good dreams. Researchers speculate that odors have a stronger effect on dream emotions than other external stimuli because the sense of smell is linked directly to parts of the brain associated with dreaming. 
+			<span class="label label-success" style='display:none'><span class="glyphicon glyphicon-ok"></span> Correct!</span> <span class="label label-danger" style='display:none'><span class="glyphicon glyphicon-remove"></span> Incorrect!</span> >  Sleepwalking is more common in kids than adults. But it can involve very complex -- and sometimes dangerous -- behaviors. A sleepwalker may drive a car, climb out a window, move furniture, or eat and get back in bed ¨C all without ever waking up. It's a good idea to tell your doctor if you sleepwalk. Sleepwalking appears to run in families, but it may happen if you're fatigued, stressed, or with alcohol use.
 		</p>
 	</div>
 	
