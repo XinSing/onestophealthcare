@@ -7,7 +7,7 @@
 		<br>
 		<br>
 		<br>
-		<div class='col-sm-6 col-md-6'>
+		<div class='col-sm-6 col-md-4'>
 			<div class="thumbnail">
 			  <img src="/onestophealthcare/res/img/editforum.jpg" >
 			  <div class="caption">
@@ -31,19 +31,39 @@
 			</div>
 		</div>	
 		
-		<div class='col-sm-6 col-md-6'>
+		<div class='col-sm-6 col-md-4'>
 			<div class="thumbnail">
-			  <img src="/onestophealthcare/res/img/informationkiosk.jpg" >
+			  <img src="/onestophealthcare/res/img/article.png" >
 			  <div class="caption">
-				<h2 class='text-center'>Information Kiosk</h2>
+				<h2 class='text-center'>Articles</h2>
 				<p class='text-center'><br/>
 				<a href="article.php" class="btn btn-info" role="button">Manage </a>
 				</p>
 			  </div>
 			
-			  <img src="/onestophealthcare/res/img/stressmanagement.jpg" >
+			  <img src="/onestophealthcare/res/img/video.png" >
 			  <div class="caption">
-				<h2 class='text-center'>Stress Management</h2>
+				<h2 class='text-center'>Videos</h2>
+				<p class='text-center'><br/>
+				<a href="video.php" class="btn btn-info" role="button">Manage </a>
+				</p>
+			  </div>
+			</div>
+		</div>	
+		
+		<div class='col-sm-6 col-md-4'>
+			<div class="thumbnail">
+			  <img src="/onestophealthcare/res/img/song.jpg" >
+			  <div class="caption">
+				<h2 class='text-center'>Song Therapy</h2>
+				<p class='text-center'><br/>
+				<a href="construction.php" class="btn btn-info" role="button">Manage </a>
+				</p>
+			  </div>
+			
+			  <img src="/onestophealthcare/res/img/recommendation.jpg" >
+			  <div class="caption">
+				<h2 class='text-center'>Recommendation</h2>
 				<p class='text-center'><br/>
 				<a href="construction.php" class="btn btn-info" role="button">Add </a>
 				<a href="construction.php" class="btn btn-warning" role="button">Edit </a>
@@ -53,14 +73,13 @@
 			</div>
 		</div>	
 		
-		
 	</div> 
-	<div class='container text-center'>
+	<!---<div class='container text-center'>
 		<ul class="pagination">
 		<li><a href="admin.php">1</a></li>
 		<li><a href="admin_two.php">2</a></li>
 		</ul>
-	</div>	
+	</div>	!--->
 </div>
 <style>
 .thumbnail{
