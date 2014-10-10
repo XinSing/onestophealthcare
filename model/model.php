@@ -148,6 +148,12 @@ function get_comments($db, $id)
 	return $comments;
 }
 
+function get_a_thread($db, $id)
+{
+	$thread = select($db, "SELECT ft.*, u.fullname FROM forum_thread ft INNER JOIN user u ON u.id = ft.user_id WHERE ft.id = '$id'");
+	return $thread;
+}
+
 function get_thread($db, $section)
 {
 	$thread = select($db, "SELECT ft.*, u.fullname FROM forum_thread ft INNER JOIN user u ON u.id = ft.user_id WHERE forum_section = '$section'");
@@ -158,5 +164,18 @@ function add_thread($db, $content, $forumSection)
 {
 	$uid = $_SESSION['id'];
 	$qry = "INSERT INTO `forum_thread` VALUES('',$uid,'$content',NOW(),'','$forumSection')";
+	return $db->query($qry);
+}
+
+function delete_thread($db, $id)
+{
+	$qry = "DELETE FROM `forum_thread` WHERE id = $id";
+	return $db->query($qry);
+}
+
+function add_comment($db, $comment, $id)
+{
+	$uid = $_SESSION['id'];
+	$qry = "INSERT INTO `forum_comment` VALUES('',$uid,'$id','$comment',NOW(),'')";
 	return $db->query($qry);
 }

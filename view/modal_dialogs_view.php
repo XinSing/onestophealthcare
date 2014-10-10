@@ -138,6 +138,33 @@
     </div>
 </div>
 
+<!-- add comment, thread.php -->
+<div class="modal fade" id="modaladdcomment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style=''>
+		<div class="modal-content">
+			<div class="modal-body">
+				<form id='addcommentform' action='thread.php?id=<?php echo $_GET['id']?>' method='post' class='form-horizontal' enctype="multipart/form-data">
+					<fieldset>
+						<legend>Add new comment</legend>
+						<div class='form-group'>
+							<label for='inputAddress' class='col-lg-4 control-label'>Comment:</label>
+							<div class='col-lg-7'>
+								<textarea required class='form-control' spellcheck='false' autocomplete='off' name='comment' rows='4' placeholder='Enter comment Here'></textarea>
+							</div>
+						</div>
+						<input type='hidden' value='addComment' name='action'/>
+						<input type='hidden' value='<?php echo $_GET['id']?>' name='id'/>
+						<div class='submit-group'>
+							<input type='submit' class='btn btn-primary' value='Confirm'/>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+    </div>
+</div>
+
 <!-- delete thread, forum.php -->
 <div class="modal fade" id="modaldeletethread" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
     <div class="modal-dialog">

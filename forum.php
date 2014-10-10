@@ -14,6 +14,13 @@ if(isset($_POST['action']))
 		else
 			echo "<script>alert('Fail to create thread')</script>";
 	}
+	else if($_POST['action'] == 'deleteThread')
+	{
+		if(delete_thread($db, $_POST['deleteid']))
+			echo "<script>alert('Thread deleted successfully')</script>";
+		else
+			echo "<script>alert('Fail to delete thread')</script>";
+	}
 }
 
 $health = get_thread($db, 'health');
