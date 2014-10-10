@@ -12,23 +12,27 @@
 
 <div class="tab-content">
   <div class="tab-pane fade in active" id="tab1">
+    <a href="#" class="btn btn-warning addbtn" role="button" data-toggle="modal" data-target="#modaladdthread" data-section="health">Add </a>
+    <?php foreach($health as $h){ ?>
 	<div class='thread clearfix '>
 		<div class='profilepic'>
 			<img src='res/img/forum/normal_open.gif'/>
 		</div>
 		<div class='content'>
 			<div class='name'>
-				<a href='#'>Chew Sheen Yeen</a>
+				<a href='#'><?php echo $h['fullname']?></a>
 			</div>
 			<div class='datetime'>
-				<?php echo date("h:i:sa d-m-Y"); ?>
+				<?php echo $h['date_created']?>
 			</div>
 			<p>
-				<br/>asdasd asdasd asdasdas asdasd assdasd asda sd asdasd asdasdas d as 
+				<br/><?php echo $h['content']?> 
 			</p>
 		</div>
-		<a href='#' class='btn btn-primary btn-sm' style='position:absolute;right:0;bottom:0;margin:10px;'>More</a>
+		<a href='thread.php?id=<?php echo $h['id']?>' class='btn btn-primary btn-sm' style='position:absolute;right:0;bottom:0;margin:10px;'>More</a>
+		
 	</div>
+	<?php } ?>
 	<!--<div id="reply1" class="collapse replycontainer">...</div>
 	<div data-toggle="collapse" data-target="#reply1" class='text-center replytoggler'>
 	  <a href='#'><span class="glyphicon glyphicon-chevron-down"></span></a>
@@ -94,5 +98,8 @@
 	$('.replytoggler').click(function(){
 		$(this).find('span').toggleClass('glyphicon-chevron-up');
 		$(this).find('span').toggleClass('glyphicon-chevron-down');
+	});
+	$('.addbtn').click(function(){
+		$("#modaladdthread").find('input[name="forumSection"]').val($(this).data("section"));
 	});
 </script>

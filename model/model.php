@@ -144,12 +144,19 @@ function delete_video($db, $id)
 
 function get_comments($db, $id)
 {
-	$comments = select($db, "SELECT * FROM forum_comment fc INNER JOIN user u ON u.id = fc.user_id WHERE thread_id = $id");
+	$comments = select($db, "SELECT fc.*, u.fullname FROM forum_comment fc INNER JOIN user u ON u.id = fc.user_id WHERE thread_id = $id");
 	return $comments;
 }
 
 function get_thread($db, $section)
 {
-	$thread = select($db, "SELECT * FROM forum_thread ft INNER JOIN user u ON u.id = ft.user_id WHERE forum_section = $section");
+	$thread = select($db, "SELECT ft.*, u.fullname FROM forum_thread ft INNER JOIN user u ON u.id = ft.user_id WHERE forum_section = '$section'");
 	return $thread;
+}
+
+function add_thread($db, $content, $forumSection)
+{
+	$uid = $_SESSION['id'];
+	$qry = "INSERT INTO `forum_thread` VALUES('',$uid,'$content',NOW(),'','$forumSection')";
+	return $db->query($qry);
 }

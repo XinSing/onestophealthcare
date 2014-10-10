@@ -35,8 +35,8 @@
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class='fa fa-arrow-circle-o-left'></i></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class='fa fa-arrow-circle-o-right'></i></a>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class='fa fa-arrow-left'></i></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class='fa fa-arrow-right'></i></a>
     </div><!-- /.carousel -->
 	<?php
 if(isset($_SESSION['id'])){

@@ -110,3 +110,51 @@
 		</div>
     </div>
 </div>
+
+<!-- add thread, forum.php -->
+<div class="modal fade" id="modaladdthread" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style=''>
+		<div class="modal-content">
+			<div class="modal-body">
+				<form id='addthreadform' action='forum.php' method='post' class='form-horizontal' enctype="multipart/form-data">
+					<fieldset>
+						<legend>Create new thread</legend>
+						<div class='form-group'>
+							<label for='inputAddress' class='col-lg-4 control-label'>Thread content:</label>
+							<div class='col-lg-7'>
+								<textarea required class='form-control' spellcheck='false' autocomplete='off' name='content' rows='4' placeholder='Enter thread content Here'></textarea>
+							</div>
+						</div>
+						<input type='hidden' value='addThread' name='action'/>
+						<input type='hidden' value='' name='forumSection'/>
+						<div class='submit-group'>
+							<input type='submit' class='btn btn-primary' value='Confirm'/>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+    </div>
+</div>
+
+<!-- delete thread, forum.php -->
+<div class="modal fade" id="modaldeletethread" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<form id='' action='forum.php' method='post' class='form-horizontal'>
+					<fieldset>
+						<legend>Are you sure to delete this thread?</legend>
+						<input type='hidden' value='deleteThread' name='action'/>
+						<input type='hidden' value='<?php if(isset($_GET['id'])) echo $_GET['id']?>' name='deleteid'/>
+						<div class='submit-group'>
+							<input type='submit' class='btn btn-primary btn-xs' value='Confirm'/>
+							<button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+    </div>
+</div>
