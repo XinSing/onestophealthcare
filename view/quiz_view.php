@@ -136,7 +136,27 @@
 			<span class="label label-success" style='display:none'><span class="glyphicon glyphicon-ok"></span> Correct!</span> <span class="label label-danger" style='display:none'><span class="glyphicon glyphicon-remove"></span> Incorrect!</span> >  Sleepwalking is more common in kids than adults. But it can involve very complex -- and sometimes dangerous -- behaviors. A sleepwalker may drive a car, climb out a window, move furniture, or eat and get back in bed ¨C all without ever waking up. It's a good idea to tell your doctor if you sleepwalk. Sleepwalking appears to run in families, but it may happen if you're fatigued, stressed, or with alcohol use.
 		</p>
 	</div>
-	
+	<div class='ques' id='q5' style='display:none'>
+		<h2> 5) Sleepwalking isn`t dangerous </h2>
+		<div style='margin-left:60px;'>
+			<div class="radio">
+			  <label>
+				<input type="radio" name="option4" value="0" checked>
+				True 
+			  </label>
+			</div>
+			<div class="radio">
+			  <label>
+				<input type="radio" name="option4" value="1">
+				False 
+			  </label>
+			</div>
+			
+		</div>
+		<p style='display:none'>
+			<span class="label label-success" style='display:none'><span class="glyphicon glyphicon-ok"></span> Correct!</span> <span class="label label-danger" style='display:none'><span class="glyphicon glyphicon-remove"></span> Incorrect!</span> >  Sleepwalking is more common in kids than adults. But it can involve very complex -- and sometimes dangerous -- behaviors. A sleepwalker may drive a car, climb out a window, move furniture, or eat and get back in bed ¨C all without ever waking up. It's a good idea to tell your doctor if you sleepwalk. Sleepwalking appears to run in families, but it may happen if you're fatigued, stressed, or with alcohol use.
+		</p>
+	</div>
 	<div id='complete' style='display:none' >
 		You have completed all questions.<br/>
 		You scored 

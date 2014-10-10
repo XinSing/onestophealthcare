@@ -12,7 +12,7 @@
         <a href="index.php">Home</a>
       </li>
       <li class="dropdown">
-        <a href="#" >Articles</a>
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Articles <b class="caret"></b></a>
         <ul class="dropdown-menu">
 		  
 		  <?php
