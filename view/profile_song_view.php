@@ -1,6 +1,18 @@
 <div class='container'>
-	<h2 class='text-center text-danger'>*RM0.01 Will Be Required For Downloading One Song. Money Will Be Donated To Charity Organization. </h2>
-	<h3 class='text-center text-default'>Thanks For Your Kindness. Your Kindness Will Pay Back.</h3>
+	 <div class="media">
+		<a class="pull-left" href="#">
+		<img class="media-object" src="/onestophealthcare/res/img/stressrelease.png" alt="...">
+		</a>
+		<div class="media-body">
+			<h4 class="media-heading">Release Stress</h4>
+			The song for release stress
+		</div>
+		<audio controls>
+			<source src="/onestophealthcare/res/mp3/testing.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+	
+	
 </div>	
 
 
