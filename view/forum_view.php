@@ -1,11 +1,11 @@
 <div class='container'>
 
-<h1>Forum</h1>
+<h1>Discussion Forum</h1>
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#tab1" data-toggle="tab">Health</a></li>
-  <li><a href="#tab2" data-toggle="tab">Diet</a></li>
+  <li class="active"><a href="#tab1" data-toggle="tab">Health and Disease</a></li>
+  <li><a href="#tab2" data-toggle="tab">Diet and Food</a></li>
   <li><a href="#tab3" data-toggle="tab">Hospitals/Clinics</a></li>
   <li><a href="#tab4" data-toggle="tab">Others</a></li>
 </ul>

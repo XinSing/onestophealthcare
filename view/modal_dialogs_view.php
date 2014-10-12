@@ -26,7 +26,7 @@
 			<div class="modal-body">
 				<form id='addsectionform' action='article.php' method='post' class='form-horizontal' enctype="multipart/form-data">
 					<fieldset>
-						<legend>Add article</legend>
+						<legend>Add Article</legend>
 						<div class='form-group'>
 							<label for='inputtitle' class='col-lg-2 control-label'>Article Title:</label>
 							<div class='col-lg-9'>
@@ -34,7 +34,7 @@
 							</div>
 						</div>
 						<div class='form-group'>
-							<label for='inputAddress' class='col-lg-2 control-label'>Article content:</label>
+							<label for='inputAddress' class='col-lg-2 control-label'>Article Content:</label>
 							<div class='col-lg-9'>
 								<textarea required  spellcheck='false' id='articlecontent' ></textarea>
 							</div>
@@ -80,7 +80,7 @@
 			<div class="modal-body">
 				<form id='addsectionform' action='video.php' method='post' class='form-horizontal' enctype="multipart/form-data">
 					<fieldset>
-						<legend>Add video</legend>
+						<legend>Add Video</legend>
 						<div class='form-group'>
 							<label for='inputtitle' class='col-lg-4 control-label'>Video Title:</label>
 							<div class='col-lg-7'>
@@ -88,13 +88,13 @@
 							</div>
 						</div>
 						<div class='form-group'>
-							<label for='inputAddress' class='col-lg-4 control-label'>Video description:</label>
+							<label for='inputAddress' class='col-lg-4 control-label'>Video Description:</label>
 							<div class='col-lg-7'>
 								<textarea required class='form-control' spellcheck='false' autocomplete='off' name='viddescription' rows='3' placeholder='Enter Video Description Here'></textarea>
 							</div>
 						</div>
 						<div class='form-group'>
-							<label for='inputAddress' class='col-lg-4 control-label'>Video file:</label>
+							<label for='inputAddress' class='col-lg-4 control-label'>Video File:</label>
 							<div class='col-lg-7'>
 								<input required type='file' id='file' autocomplete='off' class='' name='file'/>
 							</div>
@@ -118,9 +118,9 @@
 			<div class="modal-body">
 				<form id='addthreadform' action='forum.php' method='post' class='form-horizontal' enctype="multipart/form-data">
 					<fieldset>
-						<legend>Create new thread</legend>
+						<legend>Create New Thread</legend>
 						<div class='form-group'>
-							<label for='inputAddress' class='col-lg-4 control-label'>Thread content:</label>
+							<label for='inputAddress' class='col-lg-4 control-label'>Thread Content:</label>
 							<div class='col-lg-7'>
 								<textarea required class='form-control' spellcheck='false' autocomplete='off' name='content' rows='4' placeholder='Enter thread content Here'></textarea>
 							</div>
@@ -145,7 +145,7 @@
 			<div class="modal-body">
 				<form id='addcommentform' action='thread.php?id=<?php echo $_GET['id']?>' method='post' class='form-horizontal' enctype="multipart/form-data">
 					<fieldset>
-						<legend>Add new comment</legend>
+						<legend>Add New Comment</legend>
 						<div class='form-group'>
 							<label for='inputAddress' class='col-lg-4 control-label'>Comment:</label>
 							<div class='col-lg-7'>

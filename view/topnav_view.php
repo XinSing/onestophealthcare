@@ -23,7 +23,7 @@
         </ul>
       </li>
       <li class="dropdown">
-        <a href="#" >Videos</a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Videos <b class="caret"></b></a>
         <ul class="dropdown-menu">
 		  <?php
 		  foreach($videos as $v){
@@ -32,12 +32,7 @@
 		  ?>
         </ul>
       </li>
-      <li class="dropdown">
-        <a href="#">Food Pyramid </a>
-        <ul class="dropdown-menu">
-           
-        </ul>
-      </li>
+     
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Self-Improvement<b class="caret"></b></a>
         <ul class="dropdown-menu">
@@ -45,12 +40,11 @@
           <li><a href="#">Children Corner</a></li>
         </ul>
       </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recommendation <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Hospital</a></li>
-          <li><a href="#">Clinic</a></li>
-        </ul>
+      <li >
+        <a href="hospital.php">Recommendation</a> 
+      </li>
+	   <li>
+        <a href="#">Food Pyramid </a>
       </li>
       
     </ul>

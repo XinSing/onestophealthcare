@@ -5,6 +5,7 @@ if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin')
 {
 ?>
 	<a href="#" class="btn btn-warning editbtn" role="button" data-toggle="modal" data-target="#modaladdvideo" data-id='<?php echo $v['id']?>'>Add </a>
+	<a href="admin.php" class="btn btn-info pull-right" role="button">Back to admin page</a>
 	<?php if(isset($_GET['vid'])){?>
 	<a href="#" class="btn btn-primary deletebtn" role="button" data-toggle="modal" data-target="#modaldeletevideo" data-id='<?php echo $v['id']?>'>Delete </a>
 	<a href="admin.php" class="btn btn-info pull-right" role="button">Back to admin page</a>

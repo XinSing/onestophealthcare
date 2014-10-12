@@ -5,7 +5,7 @@
     <a href="forum.php" class="btn btn-primary pull-left">Back </a>
     <a href="#" class="btn btn-warning addbtn pull-left" role="button" data-toggle="modal" data-target="#modaladdcomment" data-section="health">Reply </a>
 	<?php if($_SESSION['type'] == 'admin'){ ?>
-    <a href="#" class="btn btn-danger addbtn pull-right" role="button" data-toggle="modal" data-target="#modaldeletethread" data-section="health">Delete thread</a>
+    <a href="#" class="btn btn-danger addbtn pull-right" role="button" data-toggle="modal" data-target="#modaldeletethread" data-section="health">Delete Thread</a>
 	<?php } ?>
 	<br/>
 	<br/>

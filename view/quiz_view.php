@@ -138,8 +138,8 @@
 	</div>
 	
 	<div id='complete' style='display:none' >
-		You have completed all questions.<br/>
-		You scored 
+		<h3 class='text-center text-warning'>You Have Completed All Questions!</h3><br/>
+		<h4>You Scored</h4> 
 	</div>
 	<p class='text-right'><a class="btn btn-primary btn-lg" role="button" id='btnnext'>Continue</a></p>
 </div>

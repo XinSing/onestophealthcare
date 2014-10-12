@@ -35,8 +35,8 @@
 			  <img src="/onestophealthcare/res/img/songtherapy.jpg" >
 			  <div class="caption">
 				<h2>Song Therapy</h2>
-				<li><h4>Apart from doing charity, but also can manage and promote good health</h4></li>
-				<li><h4>RM0.01 will be charged for one song and donated out. </h4></li>
+				<li><h4>Music plays an important and powerful role in our life </h4></li>
+				<li><h4>There are some benefits if we choose the right music for our ears</h4></li>
 				<li><h4>Music can improve quality of life and release stress</h4></li>
 				<p><a href="profile_song.php" class="btn btn-warning" role="button">Song</a> </p>
 			  </div>
@@ -48,7 +48,7 @@
 			  <div class="caption">
 				<h2>Self-Tracking</h2>
 				<li><h4>Allowing you to keep track of what you are eating daily</h4></li>
-				<li><h4>Calculation of BMI and keep track of your health level</h4></li>
+				<li><h4>Calculation of BMI to keep track of your weight status and health level</h4></li>
 			    <li><h4>A healthy food plate will be suggested </h4></li>
 				
 				
