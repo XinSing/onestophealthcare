@@ -9,7 +9,11 @@
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
       <li class="dropdown">
+		<?php if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin'){ ?>
+        <a href="admin.php">Home</a>
+		<?php } else { ?>
         <a href="index.php">Home</a>
+		<?php } ?>
       </li>
       <li class="dropdown">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Articles <b class="caret"></b></a>

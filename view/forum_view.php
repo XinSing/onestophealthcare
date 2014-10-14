@@ -43,12 +43,11 @@
   <div class="tab-pane fade" id="tab4">...</div>
 </div>
 
-
+<?php if($_SESSION['type'] == 'admin') { ?>
 <ul class="pager">
-		<li><a href="profile.php">Back</a></li>
- 
+	<li><a href="admin.php">Back</a></li>
 </ul>
-
+<?php } ?>
 </div>
 <style>
 	.thread{

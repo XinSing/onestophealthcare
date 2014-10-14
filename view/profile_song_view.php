@@ -70,9 +70,6 @@
 </div>
 
 
-<ul class="pager">
-		<li><a href="profile.php">Back</a></li>
- 
-</ul>
+
 
 </div>
