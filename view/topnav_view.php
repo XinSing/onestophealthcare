@@ -41,7 +41,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Self-Improvement<b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="quiz.php">Exercise Your Brain</a></li>
-          <li><a href="#">Children Corner</a></li>
+          <li><a href="game.php">Children Corner</a></li>
         </ul>
       </li>
       <li >

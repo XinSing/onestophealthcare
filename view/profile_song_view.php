@@ -26,7 +26,7 @@
 		</div>
 
 		<audio controls>
-			<source src="/onestophealthcare/res/mp3/positivesong" type="audio/mpeg">
+			<source src="/onestophealthcare/res/mp3/positivesong.mp3" type="audio/mpeg">
 		</audio>
 	</div>
 	
@@ -43,7 +43,7 @@
 		</div>
 
 		<audio controls>
-			<source src="/onestophealthcare/res/mp3/EagleDance" type="audio/mpeg">
+			<source src="/onestophealthcare/res/mp3/EagleDance.mp3" type="audio/mpeg">
 		</audio>
 	</div>
   </div>
@@ -61,7 +61,7 @@
 		</div>
 
 		<audio controls>
-			<source src="/onestophealthcare/res/mp3/KissTheRain" type="audio/mpeg">
+			<source src="/onestophealthcare/res/mp3/KissTheRain.mp3" type="audio/mpeg">
 		</audio>
 	</div>
   </div>

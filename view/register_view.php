@@ -4,7 +4,7 @@
 <fieldset>
 
 <!-- Form Name -->
-<legend class='col-md-offset-2 col-md-8'>New User Registration</legend>
+<legend class='col-md-offset-2 col-md-8'>New Member Registration</legend>
 
 <!-- Text input-->
 <div class="form-group">

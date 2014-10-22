@@ -1,5 +1,9 @@
 <div class='container'>
 
+<?php if($_SESSION['type'] == 'admin') { ?>
+<a href="admin.php" class="btn btn-info pull-right" role="button">Back to admin page</a>
+<?php } ?>
+
 <h1>Discussion Forum</h1>
 
 <!-- Nav tabs -->
@@ -43,11 +47,7 @@
   <div class="tab-pane fade" id="tab4">...</div>
 </div>
 
-<?php if($_SESSION['type'] == 'admin') { ?>
-<ul class="pager">
-	<li><a href="admin.php">Back</a></li>
-</ul>
-<?php } ?>
+
 </div>
 <style>
 	.thread{
