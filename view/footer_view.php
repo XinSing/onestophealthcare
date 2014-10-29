@@ -4,7 +4,7 @@ Copyright Xinsing
 	<img src="/onestophealthcare/res/img/FacebookLogo.jpg" height="50">
 
 </div>
-	<?php if(isset($_SESSION['type']) && $_SESSION['type'] = 'user') { ?>
+	<?php if(isset($_SESSION['type']) && $_SESSION['type'] == 'user') { ?>
 		<div class="container">
 			<div class="component">
 				<!-- Start Nav Structure -->

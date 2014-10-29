@@ -26,7 +26,7 @@ if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin')
 	<img src='/onestophealthcare/res/img/article/<?php echo $a['picture']?>' />
 	<?php } ?>
 	<br/>
-	<?php echo $a['content']?>
+	<div class='content'><?php echo $a['content']?></div>
 </article>
 
 <?php } ?>
@@ -34,7 +34,9 @@ if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin')
 </div>
 <style>
 .articleblock article{
-	
+	margin:10px;
+	padding:10px;
+	border:1px solid black;
 }
 .articleblock img{
 	max-width:60%;
@@ -48,5 +50,11 @@ if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin')
 <script>
 	$('.deletebtn').click(function(){
 		$('#modaldeletearticle').find('#deleteid').val($(this).data("id"));
+	});
+	$('.editbtn').click(function(){
+		$('#modaleditarticle').find('input[name="editid"]').val($(this).data("id"));
+		$('#modaleditarticle').find('input[name="articletitle"]').val($(this).parent().parent().find('header').text());
+		CKEDITOR.instances['articlecontent2'].setData($(this).parent().parent().find('.content').html());
+
 	});
 </script>

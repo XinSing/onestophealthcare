@@ -19,7 +19,7 @@ if(isset($_POST['action']))
 	}
 	else if($_POST['action'] == 'deleteComment')
 	{
-		if(delete_comment($db, $_POST['id']))
+		if(delete_comment($db, $_POST['deleteid']))
 			echo "<script>alert('Comment deleted successfully')</script>";
 		else
 			echo "<script>alert('Fail to delete comment')</script>";

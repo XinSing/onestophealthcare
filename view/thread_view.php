@@ -4,7 +4,7 @@
 
     <a href="forum.php" class="btn btn-primary pull-left">Back </a>
     <a href="#" class="btn btn-warning addbtn pull-left" role="button" data-toggle="modal" data-target="#modaladdcomment" data-section="health">Reply </a>
-	<?php if($_SESSION['type'] == 'admin'){ ?>
+	<?php if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin'){ ?>
     <a href="#" class="btn btn-danger addbtn pull-right" role="button" data-toggle="modal" data-target="#modaldeletethread" data-section="health">Delete Thread</a>
 	<?php } ?>
 	<br/>
@@ -27,8 +27,8 @@
 			<h3 class="panel-title">
 				<img src='res/img/forum/normal_open.gif'/>
 				<?php echo $c['fullname'] ?>
-				<?php if($_SESSION['type'] == 'admin'){ ?>
-				<a href="#" class="btn btn-danger btn-xs pull-right" role="button" data-toggle="modal" data-target="#modaldeletethread" data-section="health">Delete Comment</a>
+				<?php if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin'){ ?>
+				<a href="#" class="btn btn-danger btn-xs pull-right deletecommentbtn" role="button" data-id ='<?php echo $c['id'] ?>' data-toggle="modal" data-target="#modaldeletecomment" data-section="health">Delete Comment</a>
 				<?php } ?>
 			</h3>
 		</div>
@@ -40,3 +40,8 @@
 	
     <a href="#" class="btn btn-warning addbtn pull-right" role="button" data-toggle="modal" data-target="#modaladdcomment" data-section="health">Reply </a>
 </div>
+<script>
+	$('.deletecommentbtn').click(function(){
+		$('#modaldeletecomment').find('input[name="deleteid"]').val($(this).data('id'));
+	});
+</script>

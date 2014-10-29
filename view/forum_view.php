@@ -1,6 +1,6 @@
 <div class='container'>
 
-<?php if($_SESSION['type'] == 'admin') { ?>
+<?php if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin') { ?>
 <a href="admin.php" class="btn btn-info pull-right" role="button">Back to admin page</a>
 <?php } ?>
 
@@ -10,7 +10,7 @@
 <ul class="nav nav-tabs">
   <li class="active"><a href="#tab1" data-toggle="tab">Health and Disease</a></li>
   <li><a href="#tab2" data-toggle="tab">Diet and Food</a></li>
-  <li><a href="#tab3" data-toggle="tab">Hospitals/Clinics</a></li>
+  <li><a href="#tab3" data-toggle="tab">Hospitals</a></li>
   <li><a href="#tab4" data-toggle="tab">Others</a></li>
 </ul>
 
@@ -42,9 +42,78 @@
 	  <a href='#'><span class="glyphicon glyphicon-chevron-down"></span></a>
 	</div>-->
   </div>
-  <div class="tab-pane fade" id="tab2">...</div>
-  <div class="tab-pane fade" id="tab3">...</div>
-  <div class="tab-pane fade" id="tab4">...</div>
+  <div class="tab-pane fade" id="tab2">
+  <a href="#" class="btn btn-warning addbtn" role="button" data-toggle="modal" data-target="#modaladdthread" data-section="diet">Add </a>
+    <?php foreach($diet as $d){ ?>
+	<div class='thread clearfix '>
+		<div class='profilepic'>
+			<img src='res/img/forum/normal_open.gif'/>
+		</div>
+		<div class='content'>
+			<div class='name'>
+				<a href='#'><?php echo $d['fullname']?></a>
+			</div>
+			<div class='datetime'>
+				<?php echo $d['date_created']?>
+			</div>
+			<p>
+				<br/><?php echo $d['content']?> 
+			</p>
+		</div>
+		<a href='thread.php?id=<?php echo $d['id']?>' class='btn btn-primary btn-sm' style='position:absolute;right:0;bottom:0;margin:10px;'>More</a>
+		
+	</div>
+	<?php } ?>
+  </div>
+  
+  <div class="tab-pane fade" id="tab3">
+  <a href="#" class="btn btn-warning addbtn" role="button" data-toggle="modal" data-target="#modaladdthread" data-section="hosp">Add </a>
+    <?php foreach($hosp as $ho){ ?>
+	<div class='thread clearfix '>
+		<div class='profilepic'>
+			<img src='res/img/forum/normal_open.gif'/>
+		</div>
+		<div class='content'>
+			<div class='name'>
+				<a href='#'><?php echo $ho['fullname']?></a>
+			</div>
+			<div class='datetime'>
+				<?php echo $ho['date_created']?>
+			</div>
+			<p>
+				<br/><?php echo $ho['content']?> 
+			</p>
+		</div>
+		<a href='thread.php?id=<?php echo $ho['id']?>' class='btn btn-primary btn-sm' style='position:absolute;right:0;bottom:0;margin:10px;'>More</a>
+		
+	</div>
+	<?php } ?>
+  </div>
+  
+  <div class="tab-pane fade" id="tab4">
+  <a href="#" class="btn btn-warning addbtn" role="button" data-toggle="modal" data-target="#modaladdthread" data-section="others">Add </a>
+    <?php foreach($others as $o){ ?>
+	<div class='thread clearfix '>
+		<div class='profilepic'>
+			<img src='res/img/forum/normal_open.gif'/>
+		</div>
+		<div class='content'>
+			<div class='name'>
+				<a href='#'><?php echo $o['fullname']?></a>
+			</div>
+			<div class='datetime'>
+				<?php echo $o['date_created']?>
+			</div>
+			<p>
+				<br/><?php echo $o['content']?> 
+			</p>
+		</div>
+		<a href='thread.php?id=<?php echo $o['id']?>' class='btn btn-primary btn-sm' style='position:absolute;right:0;bottom:0;margin:10px;'>More</a>
+		
+	</div>
+	<?php } ?>
+  
+  </div>
 </div>
 
 

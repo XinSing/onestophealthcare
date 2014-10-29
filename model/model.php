@@ -173,9 +173,41 @@ function delete_thread($db, $id)
 	return $db->query($qry);
 }
 
+function delete_comment($db, $id)
+{
+	$qry = "DELETE FROM `forum_comment` WHERE id = $id";
+	return $db->query($qry);
+}
+
 function add_comment($db, $comment, $id)
 {
 	$uid = $_SESSION['id'];
 	$qry = "INSERT INTO `forum_comment` VALUES('',$uid,'$id','$comment',NOW(),'')";
 	return $db->query($qry);
+}
+
+function add_article($db, $title, $content, $categoryid)
+{
+	$uid = $_SESSION['id'];
+	$qry = "INSERT INTO `article` VALUES('','$content','','$title','$categoryid',NOW())";
+	return $db->query($qry);
+}
+
+
+function edit_article($db, $title, $content, $categoryid, $article_id)
+{
+	$uid = $_SESSION['id'];
+	$qry = "UPDATE `article` set content = '$content', title = '$title', category = '$categoryid' WHERE id = $article_id";
+	return $db->query($qry);
+}
+
+function get_all_private_hosp($db)
+{
+	$hosp = select($db, "SELECT * FROM states");
+	for($i = 0; $i < sizeof($hosp); $i++){
+		$state = $hosp[$i]['state'];
+		$temp = select($db, "SELECT * FROM private_hospital WHERE state = '$state'");
+		$hosp[$i]['hosps'] = $temp;
+	}
+	return $hosp;
 }

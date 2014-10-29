@@ -36,11 +36,65 @@
 						<div class='form-group'>
 							<label for='inputAddress' class='col-lg-2 control-label'>Article Content:</label>
 							<div class='col-lg-9'>
-								<textarea required  spellcheck='false' id='articlecontent' ></textarea>
+								<textarea required  spellcheck='false' id='articlecontent' name='articlecontent'></textarea>
 							</div>
 							<script>CKEDITOR.replace( 'articlecontent' );</script>
 						</div>
+						<div class='form-group'>
+							<label for='inputtitle' class='col-lg-2 control-label'>Article Category:</label>
+							<div class='col-lg-9'>
+								<select name='categoryid'>
+									<?php foreach($categories as $ca){?>
+									<option value='<?php echo $ca['id']?>'><?php echo $ca['category']?></option>
+									<?php } ?>
+								</select>
+							</div>
+						</div>
 						<input type='hidden' value='addArticle' name='action'/>
+						<div class='submit-group'>
+							<input type='submit' class='btn btn-primary' value='Confirm'/>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+    </div>
+</div>
+
+<!-- edit article, article.php -->
+<div class="modal fade" id="modaleditarticle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+    <div class="modal-dialog" style='width:90%'>
+		<div class="modal-content">
+			<div class="modal-body">
+				<form id='' action='article.php' method='post' class='form-horizontal' enctype="multipart/form-data">
+					<fieldset>
+						<legend>Edit Article</legend>
+						<div class='form-group'>
+							<label for='inputtitle' class='col-lg-2 control-label'>Article Title:</label>
+							<div class='col-lg-9'>
+								<input required type='text' id='' autocomplete='off' class='form-control' placeholder='Enter article Title Here' name='articletitle'/>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label for='inputAddress' class='col-lg-2 control-label'>Article Content:</label>
+							<div class='col-lg-9'>
+								<textarea required  spellcheck='false' id='' name='articlecontent2'></textarea>
+							</div>
+							<script>CKEDITOR.replace( 'articlecontent2' );</script>
+						</div>
+						<div class='form-group'>
+							<label for='inputtitle' class='col-lg-2 control-label'>Article Category:</label>
+							<div class='col-lg-9'>
+								<select name='categoryid'>
+									<?php foreach($categories as $ca){?>
+									<option value='<?php echo $ca['id']?>'><?php echo $ca['category']?></option>
+									<?php } ?>
+								</select>
+							</div>
+						</div>
+						<input type='hidden' value='editArticle' name='action'/>
+						<input type='hidden' value='0' name='editid'/>
 						<div class='submit-group'>
 							<input type='submit' class='btn btn-primary' value='Confirm'/>
 							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
@@ -174,6 +228,28 @@
 					<fieldset>
 						<legend>Are you sure to delete this thread?</legend>
 						<input type='hidden' value='deleteThread' name='action'/>
+						<input type='hidden' value='<?php if(isset($_GET['id'])) echo $_GET['id']?>' name='deleteid'/>
+						<div class='submit-group'>
+							<input type='submit' class='btn btn-primary btn-xs' value='Confirm'/>
+							<button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+    </div>
+</div>
+
+<!-- delete comment, forum.php -->
+<div class="modal fade" id="modaldeletecomment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<form id='' action='thread.php?id=<?php if(isset($_GET['id'])) echo $_GET['id']?>' method='post' class='form-horizontal'>
+					<fieldset>
+						<legend>Are you sure to delete this comment?</legend>
+						<input type='hidden' value='deleteComment' name='action'/>
+						<input type='hidden' value='<?php if(isset($_GET['id'])) echo $_GET['id']?>' name='threadid'/>
 						<input type='hidden' value='<?php if(isset($_GET['id'])) echo $_GET['id']?>' name='deleteid'/>
 						<div class='submit-group'>
 							<input type='submit' class='btn btn-primary btn-xs' value='Confirm'/>
