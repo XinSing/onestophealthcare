@@ -186,6 +186,17 @@ function add_comment($db, $comment, $id)
 	return $db->query($qry);
 }
 
+function delete_song($db, $id)
+{
+	$qry = "DELETE FROM `song` WHERE id = $id";
+	return $db->query($qry);
+}
+
+function add_song($db, $title, $description, $sourcefile, $category)
+{
+	$qry = "INSERT INTO `song` VALUES('','$title‘,'$description','$sourcefile','$category')";
+	return $db->query($qry);
+}
 function add_article($db, $title, $content, $categoryid)
 {
 	$uid = $_SESSION['id'];
