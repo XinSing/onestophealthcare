@@ -48,7 +48,7 @@
         <a href="hospital.php">Recommendation</a> 
       </li>
 	   <li>
-        <a href="#">Food Pyramid </a>
+        <a href="pyramid.php">Food Pyramid </a>
       </li>
       
     </ul>

@@ -315,7 +315,7 @@
 					
 					if(bmi <= 18.5){
 						score += 15;
-						$('#resultanalysis').append("<li>YOU ARE UNDER OPTIMUM WEIGHT FOR YOUR HEIGHT. YOU COULD AFFORD TO GAIN A LITTLE WEIGHT.</li>");
+						$('#resultanalysis').append("<li>YOU ARE UNDER OPTIMUM WEIGHT FOR YOUR HEIGHT. This may increase your risk for health problems. Check with your health care provider to see if you should try to gain weight. If you have recently lost weight, have health problems, or have difficulties with eating, speak with your health care provider.</li>");
 					}
 					else if(bmi <= 24.9){
 						score += 20;

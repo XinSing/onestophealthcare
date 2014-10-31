@@ -8,7 +8,7 @@ Copyright Xinsing
 		<div class="container">
 			<div class="component">
 				<!-- Start Nav Structure -->
-				<button class="cn-button" id="cn-button" style='outline:none'>MENU</button>
+				<button class="cn-button" id="cn-button" style='outline:none'>Menu</button>
 				<div class="cn-wrapper" id="cn-wrapper">
 				    <ul>
 				      <li><a href="index.php"><span class="icon-star"></span></a></li>
