@@ -3,45 +3,55 @@
 	
 <!-- Nav tabs -->
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#tab1" data-toggle="tab">Kuala Lumpur</a></li>
-  <li><a href="#tab2" data-toggle="tab">Johor</a></li>
-  <li><a href="#tab3" data-toggle="tab">Malacca</a></li>
-  <li><a href="#tab4" data-toggle="tab">Negeri Sembilan</a></li>
-  <li><a href="#tab5" data-toggle="tab">Selangor</a></li>
-  <li><a href="#tab6" data-toggle="tab">Pahang</a></li>
-  <li><a href="#tab7" data-toggle="tab">Perak</a></li>
-  <li><a href="#tab8" data-toggle="tab">Kedah</a></li>
-  <li><a href="#tab9" data-toggle="tab">Penang</a></li>
-  <li><a href="#tab10" data-toggle="tab">Kelantan</a></li>
-  <li><a href="#tab11" data-toggle="tab">Sabah</a></li>
-  <li><a href="#tab12" data-toggle="tab">Sarawak</a></li>
+  <?php $i = 0; foreach($private_hosp as $h){ ?>
+  <li><a href="#tab<?php echo ++$i ?>" data-toggle="tab"><?php echo $h['state'] ?></a></li>
+  <?php } ?>
 </ul>
-
+<script>
+	$('.nav.nav-tabs li').first().addClass('active');
+</script>
 <div class="tab-content">
-<div class="tab-pane fade in active" id="tab1">
+	
+<?php if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin'){ ?>
+<a href="#" class="btn btn-warning editbtn" role="button" data-toggle="modal" data-target="#modaladdprivatehosp">Add </a>
+<?php } ?>
+
+<?php $i = 0; foreach($private_hosp as $h){ ?>
+<div class="tab-pane fade" id="tab<?php echo ++$i ?>">
   <div class="list-group">
-  
-  <h2><a href="http://www.columbiaasia.com/setapak/" class="list-group-item">Columbia Asia Hospital - Setapak</a></h2>
-  <h2><a href="http://www.pantai.com.my/OurHospitals/PantaiHospitalCheras.aspx" class="list-group-item">Pantai Cheras Medical Centre</a></h2>
-  <h2><a href="http://www.sunwaymedical.com.my/" class="list-group-item">Sunmed Specialist & Wellness Centre</a></h2>
-  <h2><a href="http://gleneagleskl.com.my/" class="list-group-item">Gleneagles Intan Medical Centre</a></h2>
-  <h2><a href="http://www.princecourt.com/" class="list-group-item">Prince Court Medical Centre</a></h2>
+<?php foreach($h['hosps'] as $h2){ ?>
+  <h2 class='privatehosprow'>
+<?php if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin'){ ?>
+    <button href="#" class="btn btn-primary deletebtn pull-right" role="button" data-toggle="modal" data-target="#modaldeleteprivatehosp" data-id='<?php echo $h2['id']?>'>Delete </button>
+<?php } ?>
+	<a href="<?php echo $h2['url'] ?>" class="" style=''><?php echo $h2['name'] ?></a>
+  </h2>
+<?php } ?>
   </div>	
 </div>
-<div class="tab-pane fade" id="tab2">...</div>
-<div class="tab-pane fade" id="tab3">...</div>
-<div class="tab-pane fade" id="tab4">...</div>
-<div class="tab-pane fade" id="tab5">...</div>
-<div class="tab-pane fade" id="tab6">...</div>
-<div class="tab-pane fade" id="tab7">...</div>
-<div class="tab-pane fade" id="tab8">...</div>
-<div class="tab-pane fade" id="tab9">...</div>
-<div class="tab-pane fade" id="tab10">...</div>
-<div class="tab-pane fade" id="tab11">...</div>
-<div class="tab-pane fade" id="tab12">...</div>
+<?php } ?>
 </div>
 </div>
+<script>
+	$('.tab-pane.fade').first().addClass('in active');
+	$('.deletebtn').click(function(){
+		$('#modaldeleteprivatehosp').find('input[name="deleteid"]').val($(this).data('id'));
+	});
+</script>
 <ul class="pager">
-		<li><a href="hospital.php">Back</a></li>
- 
+	<li><a href="hospital.php">Back</a></li>
 </ul>
+<style>
+.privatehosprow a{
+	text-decoration:none;
+	color:#555;
+}
+.privatehosprow{
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+}
+</style>

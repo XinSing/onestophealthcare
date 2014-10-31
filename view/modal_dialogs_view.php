@@ -219,6 +219,157 @@
     </div>
 </div>
 
+<!-- add privatehosp, hospital_private.php -->
+<div class="modal fade" id="modaladdprivatehosp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style=''>
+		<div class="modal-content">
+			<div class="modal-body">
+				<form id='addcommentform' action='hospital_private.php' method='post' class='form-horizontal' enctype="multipart/form-data">
+					<fieldset>
+						<legend>Add New Private Hospital</legend>
+						<div class='form-group'>
+							<label for='inputAddress' class='col-lg-4 control-label'>Name:</label>
+							<div class='col-lg-7'>
+								<input type='text' required class='form-control' spellcheck='false' autocomplete='off' name='name'/>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label for='inputAddress' class='col-lg-4 control-label'>URL:</label>
+							<div class='col-lg-7'>
+								<input type='text' required class='form-control' spellcheck='false' autocomplete='off' name='url'/>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label for='inputAddress' class='col-lg-4 control-label'>State:</label>
+							<div class='col-lg-7'>
+								<select name='state'>
+									<?php foreach($private_hosp as $h){ ?>
+										<option><?php echo $h['state'] ?></option>
+									<?php } ?>
+								</select>
+							</div>
+						</div>
+						<input type='hidden' value='addPrivateHosp' name='action'/>
+						<input type='hidden' value='<?php echo $_GET['id']?>' name='id'/>
+						<div class='submit-group'>
+							<input type='submit' class='btn btn-primary' value='Confirm'/>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+    </div>
+</div>
+
+<!-- add publichosp, hospital_gov.php -->
+<div class="modal fade" id="modaladdpublichosp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style=''>
+		<div class="modal-content">
+			<div class="modal-body">
+				<form id='addcommentform' action='hospital_government.php' method='post' class='form-horizontal' enctype="multipart/form-data">
+					<fieldset>
+						<legend>Add New Government Hospital</legend>
+						<div class='form-group'>
+							<label for='inputAddress' class='col-lg-4 control-label'>Name:</label>
+							<div class='col-lg-7'>
+								<input type='text' required class='form-control' spellcheck='false' autocomplete='off' name='name'/>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label for='inputAddress' class='col-lg-4 control-label'>Picture:</label>
+							<div class='col-lg-7'>
+								<input type='file' required name='pic'/>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label for='inputAddress' class='col-lg-4 control-label'>URL:</label>
+							<div class='col-lg-7'>
+								<input type='text' required class='form-control' spellcheck='false' autocomplete='off' name='url'/>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label for='inputAddress' class='col-lg-4 control-label'>Description:</label>
+							<div class='col-lg-7'>
+								<input type='text' required class='form-control' spellcheck='false' autocomplete='off' name='description'/>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label for='inputAddress' class='col-lg-4 control-label'>Address:</label>
+							<div class='col-lg-7'>
+								<input type='text' required class='form-control' spellcheck='false' autocomplete='off' name='address'/>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label for='inputAddress' class='col-lg-4 control-label'>Map url:</label>
+							<div class='col-lg-7'>
+								<input type='text' required class='form-control' spellcheck='false' autocomplete='off' name='mapurl'/>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label for='inputAddress' class='col-lg-4 control-label'>State:</label>
+							<div class='col-lg-7'>
+								<select name='state'>
+									<?php foreach($private_hosp as $h){ ?>
+										<option><?php echo $h['state'] ?></option>
+									<?php } ?>
+								</select>
+							</div>
+						</div>
+						<input type='hidden' value='addPublicHosp' name='action'/>
+						<div class='submit-group'>
+							<input type='submit' class='btn btn-primary' value='Confirm'/>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+    </div>
+</div>
+
+<!-- delete private hospital, hospital_private.php -->
+<div class="modal fade" id="modaldeleteprivatehosp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<form id='' action='hospital_private.php' method='post' class='form-horizontal'>
+					<fieldset>
+						<legend>Are you sure to delete this hospital?</legend>
+						<input type='hidden' value='deletePrivateHosp' name='action'/>
+						<input type='hidden' value='0' name='deleteid'/>
+						<div class='submit-group'>
+							<input type='submit' class='btn btn-primary btn-xs' value='Confirm'/>
+							<button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+    </div>
+</div>
+
+<!-- delete private hospital, hospital_private.php -->
+<div class="modal fade" id="modaldeletepublichosp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<form id='' action='hospital_government.php' method='post' class='form-horizontal'>
+					<fieldset>
+						<legend>Are you sure to delete this hospital?</legend>
+						<input type='hidden' value='deletePublicHosp' name='action'/>
+						<input type='hidden' value='0' name='deleteid'/>
+						<div class='submit-group'>
+							<input type='submit' class='btn btn-primary btn-xs' value='Confirm'/>
+							<button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+    </div>
+</div>
+
 <!-- delete thread, forum.php -->
 <div class="modal fade" id="modaldeletethread" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
     <div class="modal-dialog">

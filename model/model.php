@@ -222,3 +222,33 @@ function get_all_private_hosp($db)
 	}
 	return $hosp;
 }
+
+function add_private_hosp($db, $name, $url, $state)
+{
+	$qry = "INSERT INTO `private_hospital` VALUES('','$state','$name','$url')";
+	return $db->query($qry);
+}
+
+function delete_private_hosp($db, $id)
+{
+	$qry = "DELETE FROM `private_hospital` WHERE id = $id";
+	return $db->query($qry);
+}
+
+function get_all_public_hosp($db)
+{
+	$hosp = select($db, "SELECT * FROM public_hospital");
+	return $hosp;
+}
+
+function add_public_hosp($db, $state, $name, $picdirc, $description, $url, $address, $mapurl)
+{
+	$qry = "INSERT INTO `public_hospital` VALUES('','$state','$name','$picdirc','$description', '$url', '$address', '$mapurl')";
+	return $db->query($qry);
+}
+
+function delete_public_hosp($db, $id)
+{
+	$qry = "DELETE FROM `public_hospital` WHERE id = $id";
+	return $db->query($qry);
+}
