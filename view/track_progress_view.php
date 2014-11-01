@@ -180,14 +180,14 @@
 
 <!-- Multiple Radios -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="eatsupper">Do you have the habit of eating supper?</label>
+  <label class="col-md-4 control-label" for="sleep">Do you struggle to get to sleep no matter how tired you are? Or do you wake up in the middle of the night and lie awake for hours ?</label>
   <div class="col-md-4">
-    <label class='radio-inline' for="eatsupper-0">
-      <input type="radio" name="eatsupper" id="eatsupper-0" value="2" checked="checked">
+    <label class='radio-inline' for="sleep-0">
+      <input type="radio" name="sleep" id="sleep-0" value="2" checked="checked">
       Yes
     </label>
-    <label class='radio-inline' for="eatsupper-1">
-      <input type="radio" name="eatsupper" id="eatsupper-1" value="5">
+    <label class='radio-inline' for="sleep-1">
+      <input type="radio" name="sleep" id="sleep-1" value="5">
       No
     </label>
   </div>
@@ -346,9 +346,9 @@
 					score += parseInt($('input[name="eatbreakfast"]:checked').val());
 					if($('input[name="eatbreakfast"]:checked').val()=='3')
 						$('#resultanalysis').append("<li>People who eat breakfast have an easier time focusing and are more productive throughout the morning than people who skip breakfast. A healthy breakfast can provide your body with the nutrients that you need to stay energized for several hours and therefore may participate in more physical activity than people who skip breakfast. Skipping breakfast can make you feel grumpy and fatigued throughout the day. Taking just 10 minutes to eat something in the morning can really improve your mood.</li>");
-					score += parseInt($('input[name="eatsupper"]:checked').val());
-					if($('input[name="eatsupper"]:checked').val()=='3')
-						$('#resultanalysis').append("<li>Eating at night is a bad habit to get into because it doesn't leave enough time before going to bed to digest your food well. Start from today : STOP EATING AT NIGHT.</li>");
+					score += parseInt($('input[name="sleep"]:checked').val());
+					if($('input[name="sleep"]:checked').val()=='2')
+						$('#resultanalysis').append("<li>Chronic insomnia can even contribute to serious health problems. Simple changes to your lifestyle and daily habits can put a stop to sleepless nights.</li>");
 					score += parseInt($('input[name="smoker"]:checked').val());
 					if($('input[name="smoker"]:checked').val()=='0')
 						$('#resultanalysis').append("<li>SMOKING KILLS. If you're killed, you've lost a very important part of your life.</li>");

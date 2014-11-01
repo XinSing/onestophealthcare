@@ -17,9 +17,9 @@
 				</p>
 			  </div>
 			  
-			  <img src="/onestophealthcare/res/img/lifestylequestion.jpg" >
+			  <img src="/onestophealthcare/res/img/chat.png" >
 			  <div class="caption">
-				<h2 class='text-center'>Lifestyle Question</h2>
+				<h2 class='text-center'>Live Chat</h2>
 				<p class='text-center'><br/>
 				<a href="construction.php" class="btn btn-info" role="button">Manage </a>
 				
@@ -62,7 +62,7 @@
 			  <div class="caption">
 				<h2 class='text-center'>Recommendation</h2>
 				<p class='text-center'><br/>
-				<a href="construction.php" class="btn btn-info" role="button">Manage </a>
+				<a href="hospital.php" class="btn btn-info" role="button">Manage </a>
 				
 				</p>
 			  </div>

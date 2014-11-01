@@ -5,7 +5,7 @@ if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin')
 {
 ?>
 	<a href="#" class="btn btn-warning editbtn" role="button" data-toggle="modal" data-target="#modaladdarticle" data-id="">Add </a>
-	<a href="admin.php" class="btn btn-info pull-right" role="button">Back to admin page</a>
+	<a href="admin.php" class="btn btn-info pull-right" role="button">Back to admin page</a> 
 <?php
 }
 ?>
