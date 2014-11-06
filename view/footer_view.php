@@ -14,7 +14,7 @@ Copyright Xinsing
 				      <li><a href="index.php"><span class="icon-star"></span></a></li>
 				      <li><a href="forum.php"><span class="icon-comment"></span></a></li>
 				      <li><a href="profile.php"><span class="icon-home"></span></a></li>
-				      <li><a href="hospital.php"><span class="icon-plus-sign"></span></a></li>
+				      <li><a href="hospital.php"><span class="icon-remove-sign"></span></a></li>
 				      <li><a href="logout.php"><span class="icon-off"></span></a></li>
 				     </ul>
 				</div>
