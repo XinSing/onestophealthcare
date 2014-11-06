@@ -252,3 +252,24 @@ function delete_public_hosp($db, $id)
 	$qry = "DELETE FROM `public_hospital` WHERE id = $id";
 	return $db->query($qry);
 }
+
+function add_message($db, $senderid, $content, $receiverid)
+{
+	$qry = "INSERT INTO `message` VALUES('',$senderid,$receiverid,'$content',NOW(), 'unread')";
+	return $db->query($qry);
+}
+
+function get_message($db, $senderid, $receiverid)
+{
+	$comments = select($db, "SELECT * FROM message WHERE sender_ID = $senderid AND receiver_ID = $receiverid AND status = 'unread'");
+	
+	$qry = "UPDATE `message` set status = 'read' WHERE sender_ID = $senderid AND receiver_ID = $receiverid";
+	$db->query($qry);
+	return $comments;
+}
+
+function get_all_chat_user($db)
+{
+	$hosp = select($db, "SELECT m.*, u.username FROM message m INNER JOIN user u on m.sender_ID = u.id WHERE DAY(time) = DAY(NOW()) AND receiver_ID = $_SESSION[id] GROUP BY sender_ID");
+	return $hosp;
+}

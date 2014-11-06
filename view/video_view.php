@@ -9,6 +9,7 @@ if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin')
 	<?php if(isset($_GET['vid'])){?>
 	<a href="#" class="btn btn-primary deletebtn" role="button" data-toggle="modal" data-target="#modaldeletevideo" data-id='<?php echo $v['id']?>'>Delete </a>
 	<a href="admin.php" class="btn btn-info pull-right" role="button">Back to admin page</a>
+	<?php } ?>
 <?php
 }
 else if(isset($_SESSION['type']) && $_SESSION['type'] == 'user')
@@ -17,7 +18,6 @@ else if(isset($_SESSION['type']) && $_SESSION['type'] == 'user')
 ?>
 <?php foreach($video as $v){ // id, content, picture, title,//load the numbers of articles ?>				
 <article>
-	<?php } ?>
 	<h2><?php echo $v['title']?></h2>
 	<video width="100%" controls>
 	  <source src="<?php echo $v['path']?>" type="video/mp4">
