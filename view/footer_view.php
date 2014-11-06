@@ -12,9 +12,9 @@ Copyright Xinsing
 				<div class="cn-wrapper" id="cn-wrapper">
 				    <ul>
 				      <li><a href="index.php"><span class="icon-star"></span></a></li>
-				      <li><a href="article.php"><span class="icon-info-sign"></span></a></li>
+				      <li><a href="forum.php"><span class="icon-comment"></span></a></li>
 				      <li><a href="profile.php"><span class="icon-home"></span></a></li>
-				      <li><a href="video.php"><span class="icon-play-circle"></span></a></li>
+				      <li><a href="hospital.php"><span class="icon-remove-sign"></span></a></li>
 				      <li><a href="logout.php"><span class="icon-off"></span></a></li>
 				     </ul>
 				</div>

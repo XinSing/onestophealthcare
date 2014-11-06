@@ -1,4 +1,5 @@
 <div class='container'>
+
 	<h1 class='text-center text-info'>Government Hospitals in Malaysia</h1>
 	
 <?php if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin'){ ?>

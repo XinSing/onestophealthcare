@@ -1,7 +1,7 @@
 <div class='container'>
 
 <?php if(isset($_SESSION['type']) && $_SESSION['type'] == 'admin') { ?>
-<a href="admin.php" class="btn btn-info pull-right" role="button">Back to admin page</a>
+<a href="admin.php" class="btn btn-info pull-right" role="button">Back to admin page</a> 
 <?php } ?>
 
 <h1>Discussion Forum</h1>

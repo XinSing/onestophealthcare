@@ -22,10 +22,11 @@
 			<div class="thumbnail">
 			  <img src="/onestophealthcare/res/img/livechat.png">
 			  <div class="caption">
-				<h2>Live Chatting</h2>
+				<h2>Live Chat</h2>
 				<li><h4>Chatting lively with a group of health professional adviser</h4></li>
-				<li><h4>The health professional adviser may be doctors, pharmacist or nutritionist</h4></li>
-				<li><h4>Get advice about your health problem immediately</h4></p>
+				<li><h4>Get advice about your health problem immediately</h4></li>
+				<li><h4>Available from 6.00pm to 10.00pm DAILY</h4></p>
+				<br>
 				<p><a href="chat.php" class="btn btn-danger" role="button">Start Chat</a> </p>
 			  </div>
 			</div>
@@ -36,8 +37,8 @@
 			  <div class="caption">
 				<h2>Song Therapy</h2>
 				<li><h4>Music plays an important and powerful role in our life </h4></li>
-				<li><h4>There are some benefits if we choose the right music for our ears</h4></li>
 				<li><h4>Music can improve quality of life and release stress</h4></li>
+				<li><h4>Suitable songs will be suggested according to your health level analysis</h4></li>
 				<p><a href="profile_song.php" class="btn btn-warning" role="button">Song</a> </p>
 			  </div>
 			</div>
