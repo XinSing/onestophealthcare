@@ -9,7 +9,7 @@ if(!isset($_SESSION['id']))
 $chats = get_all_chat_user($db);	
 	
 require 'view/header_view.php';
-require "view/chat_view.php";
+require "view/chatlist_view.php";
 require 'view/footer_view.php';
 
 ?>

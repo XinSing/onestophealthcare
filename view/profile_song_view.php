@@ -2,6 +2,21 @@
 
 <h1>Song Therapy</h1>
 
+<?php if(sizeof($tracking) > 0){ ?>
+<div id='recommend'>
+	<h2>Recommended to you:</h2>
+</div>
+<script>
+$(document).ready(function(){
+	if(<?php echo ($tracking[0]['happy'])?>!=1)
+		$('#tab1').clone().toggleClass('fade').appendTo('#recommend');
+	if(<?php echo $tracking[0]['stress']?>)
+		$('#tab2').clone().toggleClass('fade').appendTo('#recommend');
+	if(<?php echo $tracking[0]['sleep']?>)
+		$('#tab3').clone().toggleClass('fade').appendTo('#recommend');
+});
+</script>
+<?php } ?>
 <!-- Nav tabs -->
 <ul class="nav nav-tabs">
   <li class="active"><a href="#tab1" data-toggle="tab">Positive Energy</a></li>
@@ -10,7 +25,6 @@
   <li><a href="#tab4" data-toggle="tab">Feel Good</a></li>
   <li><a href="#tab5" data-toggle="tab">Kids Music</a></li>
 </ul>
-
 <div class="tab-content">
   <div class="tab-pane fade in active" id="tab1">
     <div class="media">

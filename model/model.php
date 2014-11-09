@@ -273,3 +273,15 @@ function get_all_chat_user($db)
 	$hosp = select($db, "SELECT m.*, u.username FROM message m INNER JOIN user u on m.sender_ID = u.id WHERE DAY(time) = DAY(NOW()) AND receiver_ID = $_SESSION[id] GROUP BY sender_ID");
 	return $hosp;
 }
+
+function get_tracking($db, $id)
+{
+	$hosp = select($db, "SELECT * FROM tracking WHERE user_id = $id ORDER BY id desc LIMIT 1");
+	return $hosp;
+}
+
+function add_tracking($db, $userid, $happy, $stress, $sleep, $healthlevel)
+{
+	$qry = "INSERT INTO `tracking` VALUES('',$userid,$happy,'$stress','$sleep','$healthlevel',NOW())";
+	return $db->query($qry);
+}

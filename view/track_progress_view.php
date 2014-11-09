@@ -4,21 +4,29 @@
 		<li><a href="selftracking.php">&larr; Back</a></li>
  
 </ul>
- <script type="text/javascript" src="//www.google.com/jsapi"></script>
-    <script type="text/javascript">
-      google.load('visualization', '1');
-    </script>
-    <script type="text/javascript"> 
-		
-    </script>   
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  var chart;;
+  google.load("visualization", "1", {packages:["corechart"]});
+  google.setOnLoadCallback(drawChart);
+  function drawChart() {
+
+
+	chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+	
+  }
+  
+  
+</script>
+
 <div class='result' style='width:70%; margin:auto; display:none'>
-	<h2 class='text-left'>Your Health Level: <span id='score' class='asd'></span>%</h2>
+	<h2 class='text-left'>Your Health Level: <span id='scorespan' class='asd'></span>%</h2>
 	<div class="progress progress-striped active">
 	  <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
 	  </div>
 	</div>
 	<br/>
-	<!--<div id="visualization" style="width: 600px; height: 400px;"></div> -->
+	<div id="chart_div" style="width: 900px; height: 500px;"></div>
 	<br/>
 	<div>
 		<h1 class='text-center text-primary'>Lets Check For Your Health Level Analysis: </h1>
@@ -59,7 +67,7 @@
 
 <!-- Form Name -->
 <legend class='col-md-9'>What are You Waiting For? Let`s Begin Your Health Journey Now!</legend>
-
+<!--
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Date :</label>  
   <div class="col-md-3">
@@ -68,11 +76,11 @@
   </div>
 </div>
 
-<!-- Text input-->
+ Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="Age">Age</label>  
   <div class="col-md-2">
-  <input id="Age" name="Age" type="number" placeholder="" class="form-control input-md">
+  <input id="Age" name="Age" type="number" placeholder="" class="form-control input-md" value='23'>
     
   </div>
 </div>
@@ -300,16 +308,16 @@
 <script>
 	
 	$(document).ready(function(){
-		$('.form').submit(function(){
-		
+		$('.form').submit(function(e){
+				e.preventDefault();
+				//start calculation
+				var score = 0;
 			    $(this).fadeOut(1000, function(){
 				$('.spinner').fadeIn(1000).delay(300).fadeOut(400,function(){
 					
 					
 					
 					
-					//start calculation
-					var score = 0;
 					
 					var bmi = parseInt($('input[name="weight"]').val())/(parseInt($('input[name="height"]').val())*parseInt($('input[name="height"]').val())/10000);
 					
@@ -373,40 +381,66 @@
 					
 					
 					//finish calculate
-					$('#score').text(score);
+					$('#scorespan').text(score);
 					
 					if(score > 80)
 					{
-						$('#score').addClass("text-success");
+						$('#scorespan').addClass("text-success");
 						$('.result').prepend("<h1 class='text-success'>Congratulation!!!</h1>");
 						$('.progress-bar').addClass("progress-bar-success");
 					}
 					else if(score > 60)
 					{
-						$('#score').addClass("text-primary");
+						$('#scorespan').addClass("text-primary");
 						$('.result').prepend("<h1 class='text-primary'>Not bad.</h1>");
 						$('.progress-bar').addClass("progress-bar-primary");
 					}
 					else if(score > 40)
 					{
-						$('#score').addClass("text-warning");
+						$('#scorespan').addClass("text-warning");
 						$('.result').prepend("<h1 class='text-warning'>OOPS....</h1>");
 						$('.progress-bar').addClass("progress-bar-warning");
 					}
 					else 
 					{
-						$('#score').addClass("text-danger");
+						$('#scorespan').addClass("text-danger");
 						$('.result').prepend("<h1 class='text-danger'>CAUTION!!!</h1>");
 						$('.progress-bar').addClass("progress-bar-danger");
 					}
 						
 					$('.result').fadeIn(500, function(){
 						$('.progress-bar').css('width', ''+score+'%');
-			drawVisualization();		
+						
+						var data = google.visualization.arrayToDataTable([
+						  ['Date', 'Score'],
+						  <?php foreach($result as $r){ ?>["<?php echo $r['date']?>", <?php echo $r['healthlevel']?>],
+						  <?php } ?>["<?php echo date("Y-m-d")?>", score],
+						  ["<?php echo date("Y-m-d", time()+86400);?>", 0]
+						]);
+
+						var options = {
+						  title: 'Score record',
+						  hAxis: {title: 'Date',  titleTextStyle: {color: '#333'}},
+						  vAxis: {title: 'Score', minValue: 0, maxValue: 100}
+						};
+						
+						chart.draw(data, options);
 					});
+					
+					$.post('messageAJAX.php', {
+						userid: <?php if(isset($_SESSION['id']))echo $_SESSION['id'];else echo 0 ?>,
+						happy: ($('input[name="happy"]:checked').val()=='5'),
+						stress: ($('input[name="stress"]:checked').val()=='2'),
+						sleep: ($('input[name="sleep"]:checked').val()=='2'),
+						healthlevel: score,
+						action: 'addTracking'
+					},function(data,status){
+						console.log('ksn');
+					});	
 				});
 			});
-			return false;
+			
+			
 		});
 	});
 	

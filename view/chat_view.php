@@ -8,7 +8,7 @@
 }
 
 #msgcontainer{
-	//min-height:500px;
+	min-height:150px;
 	max-height:400px;
 	overflow:auto;
 	padding:10px;
@@ -57,17 +57,12 @@
 <div class="container">
 	<div id='messagebox'>
 		<?php if(isset($_GET['id'])){ ?>
-		<h2>Chating (username)</h2>
+		<h2>Chating with <?php echo $_GET['name']?></h2>
 		<?php } else { ?>
 		<h2>Chating with expert</h2>
 		<?php } ?>
 		<div id='msgcontainer'>
-			<div class='sentmessage msg' >asdasd<div class='arrow-left'></div>
-			</div>
-			<div class='receivedmessage msg' >qwe qwdas qwe qw<div class='arrow-right'></div>
-			</div>
-			<div class='sentmessage msg' >as das asd<div class='arrow-left'></div>
-			</div>
+		
 		</div>
 		<div class='clearfix' style='border-bottom:1px solid #ddd; margin-top:6px'></div>
 		
@@ -123,8 +118,8 @@ function sendmsg(){
 		{
 			alert('Could not connect to server.');
 		}
-	$('#msginput').prop('disabled','');
-	$('#msginput').focus();
+		$('#msginput').prop('disabled','');
+		$('#msginput').focus();
 	});
 		
 }

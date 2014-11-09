@@ -14,6 +14,12 @@ if(isset($_POST['action']))
 			echo json_encode(array('status'=>'success','msg'=>$msg));
 		else
 			echo json_encode(array('status'=>'fail','msg'=>array()));
+			
+	else if($_POST['action'] == 'addTracking')
+		if($result = add_tracking($db, $_POST['userid'], $_POST['happy'], $_POST['stress'], $_POST['sleep'], $_POST['healthlevel']))
+			echo json_encode(array('status'=>'success'));
+		else
+			echo json_encode(array('status'=>'fail','msg'=>array()));
 	
 	else
 		echo json_encode(array('status'=>'fail','msg'=>array()));

@@ -55,15 +55,17 @@
 }
 </style>
 <div class="container">
-	<table>
+	<table class='table table-striped table-bordered table-hover'>
 		<thead>
 			<tr><th>Datetime</th>
-			<th>Username</th></tr>
+			<th>Username</th>
+			<th></th></tr>
 		</thead>
 		<tbody>
 			<?php foreach($chats as $c){?><tr>
-				<td><?php $c['time'] ?></td>
-				<td><?php $c['username'] ?></td>
+				<td><?php echo $c['time'] ?></td>
+				<td><?php echo $c['username'] ?></td>
+				<td><a href='chat.php?id=<?php echo $c['sender_ID'] ?>&name=<?php echo $c['username'] ?>'>Reply</a></td>
 			</tr><?php } ?>
 		</tbody>
 	</table>
